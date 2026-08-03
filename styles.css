@@ -1,0 +1,673 @@
+/* ================================================================
+   VARIÁVEIS CSS
+   ================================================================ */
+:root {
+    --primary: #1d6d5e;
+    --primary-dark: #0b4f40;
+    --primary-light: #e3f0ec;
+    --primary-gradient: linear-gradient(135deg, #1d6d5e, #0a5a4b);
+    --bg-body: #eef3f7;
+    --bg-card: #f7fafc;
+    --text-dark: #0a2938;
+    --text-muted: #2d4b56;
+    --text-body: #1a2e3b;
+    --border-color: #cbdde5;
+    --shadow: 0 20px 45px -12px rgba(0, 20, 40, 0.3);
+    --shadow-hover: 0 24px 50px -12px rgba(0, 20, 40, 0.35);
+    --radius: 40px;
+    --radius-sm: 24px;
+    --radius-xs: 16px;
+    --transition: 0.25s ease;
+}
+
+/* ================================================================
+   RESET & BASE
+   ================================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+    background: var(--bg-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    color: var(--text-body);
+    line-height: 1.6;
+}
+
+.slide-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* ================================================================
+   SLIDE
+   ================================================================ */
+.slide {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2.8rem 3rem;
+    margin-bottom: 3.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.slide:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.slide-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border-bottom: 4px solid var(--primary);
+    padding-bottom: 0.9rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.slide-header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: -0.4px;
+}
+
+.slide-header .badge {
+    background: var(--primary-gradient);
+    color: white;
+    border-radius: 60px;
+    padding: 0.2rem 1.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: auto;
+    box-shadow: 0 4px 10px rgba(29, 109, 94, 0.3);
+}
+
+.icon-big {
+    font-size: 2.6rem;
+    line-height: 1;
+    transition: transform var(--transition);
+}
+
+.slide-header:hover .icon-big {
+    transform: rotate(-8deg) scale(1.05);
+}
+
+/* ================================================================
+   GRIDS
+   ================================================================ */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.content-grid.three {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content-single {
+    max-width: 100%;
+}
+
+.text-block {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-body);
+}
+
+.text-block p {
+    margin-bottom: 1rem;
+}
+
+.text-block h3 {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    margin: 1.2rem 0 0.8rem 0;
+}
+
+.text-block strong {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.text-block ul,
+.text-block ol {
+    padding-left: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.text-block li {
+    margin-bottom: 0.5rem;
+}
+
+/* ================================================================
+   LINKS
+   ================================================================ */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color var(--transition);
+}
+
+a:hover {
+    border-bottom-color: var(--primary);
+}
+
+/* ================================================================
+   DESTAQUE
+   ================================================================ */
+.highlight-box {
+    background: var(--primary-light);
+    padding: 1.2rem 1.8rem;
+    border-radius: 28px;
+    border-left: 6px solid #1a7a68;
+    margin: 1.4rem 0;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.highlight-box:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(26, 122, 104, 0.15);
+}
+
+.highlight-box strong {
+    color: var(--primary-dark);
+}
+
+/* ================================================================
+   IMAGENS
+   ================================================================ */
+.img-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-sm);
+    padding: 0.6rem 0.6rem 0.3rem 0.6rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    margin: 1rem 0;
+    text-align: center;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.img-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.img-card img {
+    width: 100%;
+    max-height: 180px;
+    min-height: 100px;
+    object-fit: contain;
+    border-radius: var(--radius-xs);
+    background: #ffffff;
+    display: block;
+}
+
+.img-card .caption {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    padding: 0.5rem 0 0.2rem 0;
+    font-weight: 500;
+}
+
+.img-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-row .img-card {
+    flex: 1 1 140px;
+    min-width: 120px;
+}
+
+.img-row .img-card img {
+    max-height: 140px;
+    min-height: 80px;
+}
+
+/* ================================================================
+   FÓRMULAS
+   ================================================================ */
+.formula-block {
+    background: linear-gradient(145deg, #f8fbfd, #edf4f8);
+    padding: 0.9rem 1.5rem;
+    border-radius: var(--radius);
+    font-family: 'Courier New', 'Fira Code', monospace;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 1px solid #b7d0da;
+    margin: 1.2rem 0;
+    color: #003153;
+}
+
+.example-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.example-tag {
+    background: #eef4f8;
+    padding: 0.5rem 1.2rem;
+    border-radius: 60px;
+    font-weight: 500;
+    border: 1px solid #b8cfda;
+    font-size: 0.95rem;
+    transition: all var(--transition);
+}
+
+.example-tag:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+    transform: scale(1.03);
+}
+
+/* ================================================================
+   TABELAS
+   ================================================================ */
+.table-wrap {
+    overflow-x: auto;
+    margin: 1.4rem 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    background: #fafdff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+th {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 0.7rem 0.9rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid #d2e0e6;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: var(--primary-light);
+}
+
+/* ================================================================
+   TAGS E SELOS
+   ================================================================ */
+.tag {
+    background: rgba(29, 109, 94, 0.12);
+    border-radius: var(--radius);
+    padding: 0.1rem 1.2rem;
+    color: var(--primary-dark);
+    font-weight: 600;
+    display: inline-block;
+    margin: 0.15rem 0;
+    font-size: 0.9rem;
+    transition: background var(--transition);
+}
+
+.tag:hover {
+    background: rgba(29, 109, 94, 0.2);
+}
+
+/* ================================================================
+   REPRESENTAÇÃO DE HIDROCARBONETOS COM CSS
+   ================================================================ */
+.hc-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #f8fbfd, #edf4f8);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 0.8rem 0;
+    border: 1px solid #b7d0da;
+    font-family: 'Courier New', 'Fira Code', monospace;
+    font-size: 1.1rem;
+    color: #003153;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.hc-diagram .hc-row {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hc-diagram .atom {
+    background: linear-gradient(135deg, rgba(29, 109, 94, 0.18), rgba(29, 109, 94, 0.08));
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    border: 1px solid rgba(29, 109, 94, 0.35);
+    transition: transform var(--transition), background var(--transition);
+}
+
+.hc-diagram .atom:hover {
+    transform: scale(1.08);
+    background: rgba(29, 109, 94, 0.25);
+}
+
+.hc-diagram .bond {
+    font-weight: 300;
+    color: #4a6a7a;
+}
+
+.hc-diagram .bond-single {
+    border-bottom: 3px solid #8ba3b0;
+    width: 20px;
+    height: 2px;
+    margin: 0 2px;
+}
+
+.hc-diagram .bond-double {
+    border-bottom: 6px double #8ba3b0;
+    width: 20px;
+    height: 2px;
+    margin: 0 2px;
+}
+
+.hc-diagram .label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.3rem;
+}
+
+/* ================================================================
+   TOOLTIPS
+   ================================================================ */
+.tooltip-trigger {
+    cursor: help;
+    border-bottom: 2px dashed var(--primary);
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-trigger .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    background: #1a2e3b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 0.85rem;
+    transition: all var(--transition);
+    z-index: 10;
+}
+
+.tooltip-trigger .tooltip-text::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #1a2e3b;
+}
+
+.tooltip-trigger:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* ================================================================
+   RODAPÉ
+   ================================================================ */
+.footer-note {
+    text-align: center;
+    color: #3a5b68;
+    border-top: 1px solid #c5d9e0;
+    padding-top: 2rem;
+    margin-top: 1.2rem;
+    font-size: 0.95rem;
+}
+
+/* ================================================================
+   IMPRESSÃO
+   ================================================================ */
+@media print {
+    body {
+        background: white;
+        padding: 0.5in;
+    }
+
+    .slide {
+        background: white !important;
+        backdrop-filter: none !important;
+        box-shadow: none !important;
+        border: 1px solid #ccc;
+        break-inside: avoid;
+        transform: none !important;
+    }
+
+    .slide:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    .slide-header .badge {
+        background: var(--primary) !important;
+        box-shadow: none !important;
+    }
+
+    .img-card {
+        break-inside: avoid;
+        box-shadow: none !important;
+    }
+
+    .highlight-box {
+        break-inside: avoid;
+        box-shadow: none !important;
+    }
+
+    .highlight-box:hover {
+        transform: none !important;
+    }
+
+    table {
+        break-inside: avoid;
+    }
+
+    th {
+        background: var(--primary) !important;
+    }
+
+    tr:hover td {
+        background: transparent !important;
+    }
+
+    .example-tag:hover {
+        transform: none !important;
+    }
+
+    .hc-diagram .atom:hover {
+        transform: none !important;
+    }
+}
+
+/* ================================================================
+   RESPONSIVIDADE
+   ================================================================ */
+@media (max-width: 850px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
+    .content-grid.three {
+        grid-template-columns: 1fr;
+    }
+    .slide {
+        padding: 1.8rem;
+        border-radius: 28px;
+    }
+    .slide-header h2 {
+        font-size: 1.8rem;
+    }
+    .slide-header .badge {
+        font-size: 0.8rem;
+        padding: 0.15rem 1.2rem;
+    }
+    .text-block {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.8rem 0.5rem;
+    }
+
+    .slide {
+        padding: 1.2rem;
+        border-radius: var(--radius-sm);
+        margin-bottom: 2rem;
+    }
+
+    .slide-header {
+        gap: 0.8rem;
+    }
+
+    .slide-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .slide-header .badge {
+        font-size: 0.7rem;
+        padding: 0.1rem 0.8rem;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .icon-big {
+        font-size: 2rem;
+    }
+
+    .text-block {
+        font-size: 0.95rem;
+    }
+
+    .text-block h3 {
+        font-size: 1.2rem;
+    }
+
+    .formula-block {
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+        border-radius: 24px;
+    }
+
+    .img-row .img-card {
+        flex: 1 1 100%;
+    }
+
+    .img-card img {
+        max-height: 120px;
+        min-height: 80px;
+    }
+
+    .img-row .img-card img {
+        max-height: 100px;
+        min-height: 60px;
+    }
+
+    .highlight-box {
+        padding: 1rem 1.2rem;
+        border-radius: 20px;
+    }
+
+    .hc-diagram {
+        padding: 1rem;
+        font-size: 0.9rem;
+        border-radius: var(--radius-xs);
+    }
+
+    .hc-diagram .bond-single,
+    .hc-diagram .bond-double {
+        width: 12px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 0.4rem 0.6rem;
+    }
+
+    .example-tag {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.1rem 0.8rem;
+    }
+
+    .tooltip-trigger .tooltip-text {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.7rem;
+        white-space: normal;
+        min-width: 120px;
+    }
+}
+
+/* ================================================================
+   SCROLLBAR PERSONALIZADA (opcional)
+   ================================================================ */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-body);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
