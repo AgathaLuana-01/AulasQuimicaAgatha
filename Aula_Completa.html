@@ -1,0 +1,3671 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+    content="Aula integrada de Química: estrutura atômica, modelos, camadas eletrônicas e separação de misturas, com exercícios de ENEM/ENCCEJA após cada slide.">
+  <title>Aula integrada de Química | Estrutura da Matéria, Modelos Atômicos e Separação de Misturas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+/* Regras complementares EXCLUSIVAS desta página; o styles.css compartilhado é preservado. */
+    .exam-slide {
+      border: 2px solid #bbd9da;
+      background: #f4fafb;
+      margin-top: -2.3rem;
+    }
+
+    .exam-slide .slide-header {
+      border-bottom-color: #447f92;
+    }
+
+    .exam-slide .badge {
+      background: #366f86;
+    }
+
+    .exam-statement {
+      font-size: 1.04rem;
+      line-height: 1.75;
+    }
+
+    .exam-statement p {
+      margin-bottom: .6rem;
+    }
+
+    .exam-source {
+      margin: 1rem 0 0;
+      font-size: .82rem;
+    }
+
+    .exam-from-material {
+      border-left: 4px solid #9b79b6;
+    }
+
+    .exam-from-material .exam-meta {
+      color: #715392;
+    }
+
+    .model-visual-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+      gap: .75rem;
+      margin: 1.3rem 0
+    }
+
+    .model-visual {
+      padding: .8rem;
+      background: #f0f7f8;
+      border: 1px solid #cee1e4;
+      border-radius: 15px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .3rem
+    }
+
+    .model-visual svg {
+      width: 100%;
+      max-width: 125px;
+      height: 115px
+    }
+
+    .model-visual small {
+      color: var(--text-muted);
+      font-size: .8rem
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+
+    .method-grid h3 {
+      margin: 0 0 .65rem;
+      color: var(--primary-dark);
+    }
+
+    .water-steps {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .diagram-card svg {
+      display: block;
+      margin: .6rem auto;
+    }
+
+    .question-options .option-row {
+      text-align: left;
+    }
+
+    .lesson-nav {
+      position: relative;
+    }
+
+    .lesson-contents {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin: 0 0 1.3rem;
+    }
+
+    .lesson-contents a {
+      display: inline-block;
+      padding: .4rem .8rem;
+      background: #dceeea;
+      border-radius: 60px;
+      color: var(--primary-dark);
+      font-weight: 600;
+      font-size: .82rem;
+    }
+
+    .exam-slide .exam-quiz {
+      background: white;
+    }
+
+    @media(max-width:700px) {
+      .water-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .exam-slide {
+        margin-top: -1.2rem;
+      }
+
+      .method-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width:420px) {
+      .water-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .exam-slide .slide-header h2 {
+        font-size: 1.18rem;
+      }
+    }
+
+    @media print {
+      .exam-slide {
+        margin-top: 0;
+        background: white !important;
+      }
+
+      .exam-quiz {
+        break-inside: auto;
+      }
+
+      .question-options input {
+        appearance: auto;
+      }
+
+      .exam-source {
+        display: none;
+      }
+    }
+
+
+    /* Questões enviadas pelo professor: manter a leitura confortável
+       usando os cartões do layout original, sem modo tela cheia. */
+    .prova-2020 .exam-statement {
+      line-height: 1.7;
+    }
+
+    .prova-2020 .option-row {
+      white-space: normal;
+    }
+
+    .prova-2020 .preserved-question {
+      margin: 0.8rem 0 1.2rem;
+    }
+
+    .lesson-review {
+      background: #f7fbfa;
+    }
+
+    /* ---- Estilos da aula (centralizados, sem tela cheia) ---- */
+
+.q-visual {
+        background: #f2f8fa;
+        border: 1px solid #c4d8e3;
+        border-radius: 20px;
+        padding: 18px;
+        margin: 1rem 0;
+      }
+
+      .q-visual svg {
+        display: block;
+        width: 100%;
+        max-width: 670px;
+        height: auto;
+        margin: auto;
+      }
+
+      .q-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 235px), 1fr));
+        gap: 16px;
+        margin: 1rem 0;
+      }
+
+      .q-card {
+        padding: 17px;
+        border: 1px solid #c6dce4;
+        background: #f4f9fb;
+        border-radius: 17px;
+      }
+
+      .q-card h3 {
+        margin: 0 0 8px;
+        color: #0a2938;
+      }
+
+      .q-card p {
+        margin: .45rem 0;
+      }
+
+.q-arrow-row {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 12px 0;
+      }
+
+      .q-ion {
+        flex: 1 1 180px;
+        max-width: 270px;
+        min-width: 0;
+        text-align: center;
+        padding: 15px;
+        background: #edf5f9;
+        border: 1px solid #c6dce4;
+        border-radius: 15px;
+      }
+
+      .q-ion strong {
+        font-size: 2.1rem;
+        display: block;
+        color: #164b66;
+      }
+
+      .q-ion small {
+        display: block;
+        color: #345260;
+        font-size: .86rem;
+      }
+
+      .q-ion-arrow {
+        text-align: center;
+        color: #156c61;
+        font-weight: 800;
+      }
+
+      .q-equal {
+        text-align: center;
+        font-weight: 750;
+        font-size: 1.1rem;
+        color: #0b4f40;
+        padding: 12px;
+        background: #e1f0e9;
+        border-radius: 12px;
+      }
+
+      @media (max-width: 480px) {
+
+.q-ion-arrow {
+          width: 100%;
+        }
+
+        .q-visual {
+          padding: 12px;
+        }
+      }
+
+    /* ---- Estilos da aula (centralizados, sem tela cheia) ---- */
+
+.ga-esquema {
+          width: 100%;
+          margin: 1.5rem auto;
+        }
+
+        .ga-esquema svg {
+          width: 100%;
+          max-width: 950px;
+          height: auto;
+          display: block;
+          margin: auto;
+        }
+
+        .ga-versao-celular {
+          display: none;
+        }
+
+        @media (max-width: 650px) {
+          .ga-versao-desktop {
+            display: none;
+          }
+
+          .ga-versao-celular {
+            display: block;
+          }
+
+          .ga-cartao-celular {
+            max-width: 270px;
+            margin: 15px auto;
+            background: #fff;
+            color: #111;
+            border: 4px solid #222;
+            padding: 16px 18px;
+            text-align: center;
+            border-radius: 4px;
+          }
+
+          .ga-legenda-celular {
+            text-align: left;
+            display: grid;
+            gap: 10px;
+            margin-top: 18px;
+          }
+
+          .ga-legenda-celular div {
+            background: #edf5f9;
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: .95rem;
+          }
+        }
+
+    /* ---- Estilos da aula (centralizados, sem tela cheia) ---- */
+
+.qa-card {
+        background: #f2f8fa;
+        border: 1px solid #cbdde5;
+        border-radius: 18px;
+        padding: 18px;
+        margin: 10px 0;
+      }
+
+      .qa-card h3 {
+        margin: 0 0 10px;
+        color: #0a2938;
+      }
+
+      .qa-card p {
+        margin: 8px 0;
+      }
+
+      .qa-mini-grid {
+        display: grid;
+        grid-template-columns:
+          repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+        gap: 14px;
+        margin: 20px 0;
+      }
+
+      .qa-figure {
+        background: #f3f8fb;
+        border: 1px solid #cbdde5;
+        border-radius: 20px;
+        padding: 18px;
+        margin: 18px 0;
+      }
+
+      .qa-figure svg {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+      }
+
+      .qa-periodic {
+        display: grid;
+        grid-template-columns: repeat(18, 47px);
+        grid-template-rows: 28px repeat(4, 62px);
+        gap: 4px;
+        width: max-content;
+        margin: 10px auto;
+      }
+
+      .qa-periodic .group {
+        text-align: center;
+        align-self: center;
+        font-weight: bold;
+        font-size: 14px;
+        color: #214d61;
+      }
+
+      .qa-periodic .el {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #dce9f0;
+        border: 1px solid #8fbbc9;
+        border-radius: 7px;
+        color: #173d50;
+        font-size: 12px;
+      }
+
+      .qa-periodic .el strong {
+        font-size: 20px;
+      }
+
+      .qa-periodic .metal {
+        background: #d5e5fa;
+      }
+
+      .qa-periodic .ametal {
+        background: #dff1d8;
+      }
+
+      .qa-periodic .nobre {
+        background: #e9dbfa;
+      }
+
+      .qa-periodic .destaque {
+        background: #f8e4a8;
+        border: 3px solid #ba8721;
+        color: #65470a;
+      }
+
+.qa-modelos {
+        display: grid;
+        grid-template-columns:
+          repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+        gap: 14px;
+        margin: 18px 0;
+      }
+
+      .qa-modelo {
+        background: #f1f8fa;
+        border: 1px solid #cbdde5;
+        border-radius: 16px;
+        padding: 14px;
+        text-align: center;
+      }
+
+      .qa-modelo svg {
+        width: 100%;
+        max-width: 150px;
+        height: 125px;
+        display: block;
+        margin: auto;
+      }
+
+      .qa-modelo h3 {
+        margin: 7px 0;
+      }
+
+      .qa-modelo p {
+        font-size: .9rem;
+        margin: 6px 0;
+      }
+
+      .qa-level {
+        background: #e8f3f9;
+        border: 1px solid #b6d3e1;
+        border-radius: 12px;
+        padding: 13px;
+        margin: 8px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .qa-level.valencia {
+        background: #dff2e6;
+        border: 2px solid #86bd9c;
+      }
+
+      @media (max-width: 650px) {
+
+.qa-figure {
+          padding: 12px;
+        }
+      }
+  </style>
+</head>
+
+<body>
+  <main class="slide-container" id="inicio">
+    <nav class="lesson-nav" aria-label="Navegação"><a href="index.html">⌂ Todas as aulas</a><a
+        href="#encceja-2020-23">Revisão</a><a href="#atomos-moleculas">Átomos e moléculas</a><a
+        href="#tabela-modelos">Tabela Periódica</a><a href="#modelos-atomicos">Modelos</a><a href="#camadas-eletronicas">Distribuição eletrônica</a><a
+        href="#escolha-metodos">Separação de misturas</a><a href="#polimeros">Polímeros</a><a
+        href="#tratamento-da-agua">Tratamento de água</a><button type="button" class="print-action"
+        onclick="window.print()">🖨 Imprimir</button></nav>
+
+    <!-- SLIDE — encceja-2020-23 -->
+    <section class="slide exam-slide prova-2020" id="encceja-2020-23">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>QUESTÃO 23</h2><span class="badge">ENCCEJA 2020</span>
+      </div>
+      <article class="exam-quiz" data-answer="B">
+        <p class="exam-meta">ENCCEJA 2020 · Ensino Médio · Ciências da Natureza · Questão 23</p>
+        <div class="exam-statement preserved-question">A composição de uma bebida do tipo
+          refrigerante é especificada em seu rótulo,
+          porém, não se pode saber com precisão, só pelo
+          olhar, o que foi utilizado para sua fabricação.
+          Na maioria das bebidas refrigerantes, o líquido
+          apresenta uma única fase.
+          Esse tipo de bebida é classificado como</div>
+        <div class="question-options">
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-23" value="A"><span>A mistura
+              heterogênea.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-23" value="B"><span>B mistura
+              homogênea.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-23" value="C"><span>C
+              substância simples.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-23" value="D"><span>D
+              substância pura</span></label>
+        </div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Resposta: B.</strong> O enunciado informa que o líquido apresenta uma única
+            fase. Isso caracteriza mistura homogênea, apesar de conter várias substâncias.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/encceja/provas_e_gabaritos/2020_PV_EM_ciencias_natureza.pdf"
+            target="_blank" rel="noopener noreferrer">Consultar caderno oficial do ENCCEJA 2020 (opcional)</a></p>
+      </article>
+    </section>
+
+    <!-- SLIDE — viscosidade -->
+    <section class="slide" id="viscosidade">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">🍯</span>
+        <h2>Propriedade dos líquidos: viscosidade</h2><span class="badge">Conceito novo · breve</span>
+      </div>
+      <div class="content-grid">
+        <div class="text-block">
+          <h3>O que é viscosidade?</h3>
+          <p>É a <strong>resistência que um líquido oferece ao escoamento</strong> e ao movimento de objetos em seu
+            interior.</p>
+          <p>O <strong>mel</strong> tem maior viscosidade que a <strong>água</strong>: por isso, em condições
+            semelhantes, escoa mais lentamente.</p>
+        </div>
+        <div class="diagram-card"><strong>Comparação simples</strong>
+          <div class="concept-grid" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+            <div class="concept-card"><span style="font-size:2.5rem">💧</span>
+              <p><strong>Água</strong><br>Menor viscosidade</p>
+            </div>
+            <div class="concept-card"><span style="font-size:2.5rem">🍯</span>
+              <p><strong>Mel</strong><br>Maior viscosidade</p>
+            </div>
+          </div><span class="diagram-caption">O movimento da esfera depende, entre outros fatores, da resistência
+            oferecida pelo líquido.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE — encceja-2020-19 -->
+    <section class="slide exam-slide prova-2020" id="encceja-2020-19">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>QUESTÃO 19</h2><span class="badge">ENCCEJA 2020</span>
+      </div>
+      <article class="exam-quiz" data-answer="B">
+        <p class="exam-meta">ENCCEJA 2020 · Ensino Médio · Ciências da Natureza · Questão 19</p>
+        <div class="exam-statement preserved-question">Para investigar as propriedades dos líquidos,
+          um estudante encheu dois copos de mesmo
+          volume, sendo um com água (copo I) e outro
+          com mel (copo II). Em seguida, ele colocou
+          esferas metálicas idênticas na superfície de
+          cada líquido e mediu o tempo que elas levaram
+          para atingir o fundo do copo. O estudante
+          percebeu que a esfera metálica do copo I
+          chegou ao fundo muito mais rapidamente que
+          a do copo II.
+          Qual propriedade dos líquidos foi responsável
+          pelo resultado observado pelo estudante?</div>
+        <div class="question-options">
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-19" value="A"><span>A
+              Volatilidade</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-19" value="B"><span>B
+              Viscosidade</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-19" value="C"><span>C
+              Condutividade</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-19" value="D"><span>D
+              Compressibilidad</span></label>
+        </div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Resposta: B.</strong> Viscosidade é a resistência de um fluido ao
+            escoamento. O mel é mais viscoso que a água e dificulta mais o movimento da esfera, que demora mais para
+            afundar.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/encceja/provas_e_gabaritos/2020_PV_EM_ciencias_natureza.pdf"
+            target="_blank" rel="noopener noreferrer">Consultar caderno oficial do ENCCEJA 2020 (opcional)</a></p>
+      </article>
+    </section>
+
+
+
+<!-- SLIDE — atomos-moleculas -->
+    <section class="slide" id="atomos-moleculas">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">🧬</span>
+        <h2>Átomos, elementos e moléculas</h2><span class="badge">Conceitos novos</span>
+      </div>
+
+      <div class="text-block">
+        <h3>O que é um átomo?</h3>
+        <p>O <strong>átomo</strong> é a menor unidade de um elemento químico que conserva sua identidade.</p>
+        <p>Um <strong>elemento químico</strong> reúne átomos com a mesma quantidade de prótons. Cada elemento tem um
+          nome e um símbolo, como H para hidrogênio e O para oxigênio.</p>
+        <p>Os cartões abaixo apresentam alguns elementos que aparecerão nos exemplos.</p>
+      </div>
+
+      <div class="diagram-card">
+        <h3 style="margin:.1rem 0 1rem;color:var(--text-dark)">Alguns elementos</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(105px,1fr));gap:12px">
+          <div
+            style="background:#aedcf7;border:1px solid #214c6966;border-radius:15px;padding:12px;min-height:137px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#214c69">
+            <span style="align-self:flex-start;font-size:.84rem;font-weight:700;line-height:1">1</span><strong
+              style="font-size:2.25rem;line-height:1.3;letter-spacing:0">H</strong><span
+              style="font-size:.82rem;text-align:center;font-weight:600">Hidrogênio</span>
+          </div>
+          <div
+            style="background:#d4e0e8;border:1px solid #344c5e66;border-radius:15px;padding:12px;min-height:137px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#344c5e">
+            <span style="align-self:flex-start;font-size:.84rem;font-weight:700;line-height:1">2</span><strong
+              style="font-size:2.25rem;line-height:1.3;letter-spacing:0">He</strong><span
+              style="font-size:.82rem;text-align:center;font-weight:600">Hélio</span>
+          </div>
+          <div
+            style="background:#f7bfd4;border:1px solid #803e5866;border-radius:15px;padding:12px;min-height:137px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#803e58">
+            <span style="align-self:flex-start;font-size:.84rem;font-weight:700;line-height:1">6</span><strong
+              style="font-size:2.25rem;line-height:1.3;letter-spacing:0">C</strong><span
+              style="font-size:.82rem;text-align:center;font-weight:600">Carbono</span>
+          </div>
+          <div
+            style="background:#ffd1ac;border:1px solid #80502b66;border-radius:15px;padding:12px;min-height:137px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#80502b">
+            <span style="align-self:flex-start;font-size:.84rem;font-weight:700;line-height:1">7</span><strong
+              style="font-size:2.25rem;line-height:1.3;letter-spacing:0">N</strong><span
+              style="font-size:.82rem;text-align:center;font-weight:600">Nitrogênio</span>
+          </div>
+          <div
+            style="background:#bfe6c0;border:1px solid #386c3b66;border-radius:15px;padding:12px;min-height:137px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#386c3b">
+            <span style="align-self:flex-start;font-size:.84rem;font-weight:700;line-height:1">8</span><strong
+              style="font-size:2.25rem;line-height:1.3;letter-spacing:0">O</strong><span
+              style="font-size:.82rem;text-align:center;font-weight:600">Oxigênio</span>
+          </div>
+          <div
+            style="background:#dcc7f8;border:1px solid #62468766;border-radius:15px;padding:12px;min-height:137px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#624687">
+            <span style="align-self:flex-start;font-size:.84rem;font-weight:700;line-height:1">16</span><strong
+              style="font-size:2.25rem;line-height:1.3;letter-spacing:0">S</strong><span
+              style="font-size:.82rem;text-align:center;font-weight:600">Enxofre</span>
+          </div>
+          <div
+            style="background:#e9c965;border:1px solid #6c510c66;border-radius:15px;padding:12px;min-height:137px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#6c510c">
+            <span style="align-self:flex-start;font-size:.84rem;font-weight:700;line-height:1">79</span><strong
+              style="font-size:2.25rem;line-height:1.3;letter-spacing:0">Au</strong><span
+              style="font-size:.82rem;text-align:center;font-weight:600">Ouro</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-block">
+        <p>Uma <strong>molécula</strong> é um conjunto definido de átomos ligados entre si. Ela pode reunir átomos
+          iguais ou diferentes.</p>
+
+        <h3>💧 Exemplo: molécula de água</h3>
+        <p>A molécula de água (H₂O) possui <strong>dois átomos de hidrogênio</strong> e <strong>um de oxigênio</strong>.
+          Veja como representamos essas partículas separadamente e depois ligadas.</p>
+      </div>
+      <div class="diagram-card">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));align-items:center;gap:10px">
+          <div><strong>Átomos mostrados separadamente</strong><svg
+              aria-label="Dois átomos de hidrogênio e um átomo de oxigênio, apresentados separadamente" role="img"
+              style="display:block;width:100%;max-width:320px;height:auto;margin:0 auto" viewbox="0 0 320 155"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="62" cy="78" fill="#aedcf7" r="24" stroke="#214c69" stroke-width="1.5"></circle><text
+                fill="#214c69" font-size="19" font-weight="700" text-anchor="middle" x="62" y="85">H</text>
+              <circle cx="160" cy="78" fill="#bfe6c0" r="29" stroke="#386c3b" stroke-width="1.5"></circle><text
+                fill="#386c3b" font-size="24" font-weight="700" text-anchor="middle" x="160" y="85">O</text>
+              <circle cx="258" cy="78" fill="#aedcf7" r="24" stroke="#214c69" stroke-width="1.5"></circle><text
+                fill="#214c69" font-size="19" font-weight="700" text-anchor="middle" x="258" y="85">H</text>
+            </svg></div>
+          <div><strong>Átomos ligados na molécula</strong><svg
+              aria-label="Uma molécula de água: um oxigênio ligado a dois hidrogênios" role="img"
+              style="display:block;width:100%;max-width:320px;height:auto;margin:0 auto" viewbox="0 0 320 163"
+              xmlns="http://www.w3.org/2000/svg">
+              <line stroke="#8fa6b1" stroke-linecap="round" stroke-width="7" x1="158" x2="94" y1="50" y2="115"></line>
+              <line stroke="#8fa6b1" stroke-linecap="round" stroke-width="7" x1="158" x2="222" y1="50" y2="115"></line>
+              <circle cx="158" cy="49" fill="#bfe6c0" r="32" stroke="#386c3b" stroke-width="1.5"></circle><text
+                fill="#386c3b" font-size="26" font-weight="700" text-anchor="middle" x="158" y="56">O</text>
+              <circle cx="87" cy="122" fill="#aedcf7" r="23" stroke="#214c69" stroke-width="1.5"></circle><text
+                fill="#214c69" font-size="19" font-weight="700" text-anchor="middle" x="87" y="129">H</text>
+              <circle cx="229" cy="122" fill="#aedcf7" r="23" stroke="#214c69" stroke-width="1.5"></circle><text
+                fill="#214c69" font-size="19" font-weight="700" text-anchor="middle" x="229" y="129">H</text>
+            </svg></div>
+        </div>
+        <span class="diagram-caption">A ilustração mostra a composição da molécula, não uma reação química. As cores
+          apenas distinguem os elementos.</span>
+      </div>
+      <h3 style="margin:1rem 0;color:var(--text-dark)">Outras moléculas</h3>
+      <div class="concept-grid">
+        <div class="concept-card" style="text-align:center"><strong>Gás oxigênio — O₂</strong><svg
+            aria-label="O2: dois átomos de oxigênio unidos" role="img"
+            style="display:block;width:100%;max-width:300px;height:auto;margin:0 auto" viewbox="0 0 300 138"
+            xmlns="http://www.w3.org/2000/svg">
+            <line stroke="#7d9da9" stroke-linecap="round" stroke-width="4" x1="107" x2="189" y1="65" y2="65"></line>
+            <line stroke="#7d9da9" stroke-linecap="round" stroke-width="4" x1="107" x2="189" y1="73" y2="73"></line>
+            <circle cx="101" cy="69" fill="#bfe6c0" r="27" stroke="#386c3b" stroke-width="1.5"></circle><text
+              fill="#386c3b" font-size="22" font-weight="700" text-anchor="middle" x="101" y="76">O</text>
+            <circle cx="195" cy="69" fill="#bfe6c0" r="27" stroke="#386c3b" stroke-width="1.5"></circle><text
+              fill="#386c3b" font-size="22" font-weight="700" text-anchor="middle" x="195" y="76">O</text>
+          </svg>
+          <p>Dois átomos de oxigênio.</p>
+        </div>
+        <div class="concept-card" style="text-align:center"><strong>Gás carbônico — CO₂</strong><svg
+            aria-label="CO2: um átomo de carbono ao centro ligado a dois oxigênios" role="img"
+            style="display:block;width:100%;max-width:300px;height:auto;margin:0 auto" viewbox="0 0 300 138"
+            xmlns="http://www.w3.org/2000/svg">
+            <line stroke="#7d9da9" stroke-linecap="round" stroke-width="4" x1="82" x2="150" y1="65" y2="65"></line>
+            <line stroke="#7d9da9" stroke-linecap="round" stroke-width="4" x1="82" x2="150" y1="73" y2="73"></line>
+            <line stroke="#7d9da9" stroke-linecap="round" stroke-width="4" x1="150" x2="218" y1="65" y2="65"></line>
+            <line stroke="#7d9da9" stroke-linecap="round" stroke-width="4" x1="150" x2="218" y1="73" y2="73"></line>
+            <circle cx="76" cy="69" fill="#bfe6c0" r="25" stroke="#386c3b" stroke-width="1.5"></circle><text
+              fill="#386c3b" font-size="20" font-weight="700" text-anchor="middle" x="76" y="76">O</text>
+            <circle cx="150" cy="69" fill="#f7bfd4" r="25" stroke="#803e58" stroke-width="1.5"></circle><text
+              fill="#803e58" font-size="20" font-weight="700" text-anchor="middle" x="150" y="76">C</text>
+            <circle cx="224" cy="69" fill="#bfe6c0" r="25" stroke="#386c3b" stroke-width="1.5"></circle><text
+              fill="#386c3b" font-size="20" font-weight="700" text-anchor="middle" x="224" y="76">O</text>
+          </svg>
+          <p>Um carbono e dois oxigênios.</p>
+        </div>
+        <div class="concept-card" style="text-align:center"><strong>Amônia — NH₃</strong><svg
+            aria-label="NH3: nitrogênio ligado a três hidrogênios, desenho simplificado" role="img"
+            style="display:block;width:100%;max-width:300px;height:auto;margin:0 auto" viewbox="0 0 300 150"
+            xmlns="http://www.w3.org/2000/svg">
+            <line stroke="#8fa6b1" stroke-linecap="round" stroke-width="7" x1="150" x2="83" y1="40" y2="108"></line>
+            <line stroke="#8fa6b1" stroke-linecap="round" stroke-width="7" x1="150" x2="150" y1="40" y2="112"></line>
+            <line stroke="#8fa6b1" stroke-linecap="round" stroke-width="7" x1="150" x2="217" y1="40" y2="108"></line>
+            <circle cx="150" cy="40" fill="#ffd1ac" r="27" stroke="#80502b" stroke-width="1.5"></circle><text
+              fill="#80502b" font-size="22" font-weight="700" text-anchor="middle" x="150" y="47">N</text>
+            <circle cx="79" cy="110" fill="#aedcf7" r="20" stroke="#214c69" stroke-width="1.5"></circle><text
+              fill="#214c69" font-size="16" font-weight="700" text-anchor="middle" x="79" y="117">H</text>
+            <circle cx="150" cy="113" fill="#aedcf7" r="20" stroke="#214c69" stroke-width="1.5"></circle><text
+              fill="#214c69" font-size="16" font-weight="700" text-anchor="middle" x="150" y="120">H</text>
+            <circle cx="221" cy="110" fill="#aedcf7" r="20" stroke="#214c69" stroke-width="1.5"></circle><text
+              fill="#214c69" font-size="16" font-weight="700" text-anchor="middle" x="221" y="117">H</text>
+          </svg>
+          <p>Um nitrogênio e três hidrogênios.</p>
+        </div>
+        <div class="concept-card" style="text-align:center"><strong>Sulfeto de hidrogênio — H₂S</strong><svg
+            aria-label="H2S: enxofre ligado a dois hidrogênios, desenho simplificado" role="img"
+            style="display:block;width:100%;max-width:300px;height:auto;margin:0 auto" viewbox="0 0 300 155"
+            xmlns="http://www.w3.org/2000/svg">
+            <line stroke="#8fa6b1" stroke-linecap="round" stroke-width="7" x1="150" x2="91" y1="43" y2="112"></line>
+            <line stroke="#8fa6b1" stroke-linecap="round" stroke-width="7" x1="150" x2="209" y1="43" y2="112"></line>
+            <circle cx="150" cy="43" fill="#dcc7f8" r="29" stroke="#624687" stroke-width="1.5"></circle><text
+              fill="#624687" font-size="24" font-weight="700" text-anchor="middle" x="150" y="50">S</text>
+            <circle cx="87" cy="113" fill="#aedcf7" r="22" stroke="#214c69" stroke-width="1.5"></circle><text
+              fill="#214c69" font-size="18" font-weight="700" text-anchor="middle" x="87" y="120">H</text>
+            <circle cx="213" cy="113" fill="#aedcf7" r="22" stroke="#214c69" stroke-width="1.5"></circle><text
+              fill="#214c69" font-size="18" font-weight="700" text-anchor="middle" x="213" y="120">H</text>
+          </svg>
+          <p>Um enxofre e dois hidrogênios.</p>
+        </div>
+      </div>
+      <div class="highlight-box"><strong>Um exemplo diferente:</strong> o hélio (He) é um gás formado, normalmente, por
+        átomos isolados. Nem toda substância é formada por moléculas, pois a matéria também pode se organizar por meio
+        de redes cristalinas, íons ou átomos isolados.</div>
+    </section>
+
+    <!-- SLIDE — particulas-numero-atomico -->
+    <section class="slide" id="particulas-numero-atomico">
+
+      <div class="slide-header">
+        <span class="icon-big">⚛️</span>
+        <h2>O átomo: partículas, Z e A</h2>
+        <span class="badge">Estrutura atômica</span>
+      </div>
+
+      <div class="text-block">
+
+        <h3>1. Núcleo e eletrosfera</h3>
+
+        <p>
+          O átomo apresenta duas regiões principais:
+          <strong>núcleo</strong> e
+          <strong>eletrosfera</strong>.
+        </p>
+
+        <p>
+          O núcleo concentra os
+          <strong>prótons</strong> e, geralmente,
+          os <strong>nêutrons</strong>.
+          Na eletrosfera encontram-se os
+          <strong>elétrons</strong>.
+        </p>
+
+      </div>
+
+      <div class="content-grid">
+
+        <div class="q-visual">
+
+          <svg viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Átomo ilustrativo com núcleo,
+                       prótons, nêutrons e elétrons">
+
+            <ellipse cx="225" cy="140" rx="175" ry="82" fill="none" stroke="#84b0c5" stroke-width="3"
+              transform="rotate(28 225 140)" />
+
+            <ellipse cx="225" cy="140" rx="175" ry="82" fill="none" stroke="#84b0c5" stroke-width="3"
+              transform="rotate(-28 225 140)" />
+
+            <circle cx="225" cy="140" r="55" fill="#fff" stroke="#d1e3ea" stroke-width="3" />
+
+            <circle cx="206" cy="124" r="21" fill="#edb7b9" stroke="#bd6674" />
+
+            <circle cx="245" cy="124" r="21" fill="#c9d6ec" stroke="#7188ac" />
+
+            <circle cx="206" cy="161" r="21" fill="#c9d6ec" stroke="#7188ac" />
+
+            <circle cx="245" cy="161" r="21" fill="#edb7b9" stroke="#bd6674" />
+
+            <g text-anchor="middle" font-size="17" font-weight="700" fill="#324459">
+
+              <text x="206" y="131">p⁺</text>
+              <text x="245" y="131">n⁰</text>
+              <text x="206" y="168">n⁰</text>
+              <text x="245" y="168">p⁺</text>
+
+            </g>
+
+            <g fill="#377da5" stroke="#fff" stroke-width="3">
+              <circle cx="74" cy="92" r="13" />
+              <circle cx="375" cy="189" r="13" />
+              <circle cx="337" cy="72" r="13" />
+            </g>
+
+            <g font-size="21" font-weight="700" fill="#123d58">
+
+              <text x="12" y="40">Elétron (e⁻)</text>
+              <text x="348" y="262">Núcleo</text>
+
+            </g>
+
+            <path d="M130 43 L85 78" stroke="#377da5" stroke-width="2" fill="none" />
+
+            <path d="M367 245 L264 181" stroke="#577a8d" stroke-width="2" fill="none" />
+
+          </svg>
+
+          <p class="diagram-caption">
+            Representação didática, fora de escala.
+            Os elétrons não percorrem órbitas fixas
+            como as desenhadas.
+          </p>
+
+        </div>
+
+        <div class="text-block">
+
+          <h3>Partículas subatômicas</h3>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Partícula</th>
+                  <th>Carga</th>
+                  <th>Localização</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Próton</td>
+                  <td>+1</td>
+                  <td>Núcleo</td>
+                </tr>
+
+                <tr>
+                  <td>Nêutron</td>
+                  <td>0</td>
+                  <td>Núcleo</td>
+                </tr>
+
+                <tr>
+                  <td>Elétron</td>
+                  <td>−1</td>
+                  <td>Eletrosfera</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="highlight-box">
+            <strong>Átomo neutro</strong>
+
+            <p>
+              Possui a mesma quantidade de
+              prótons e elétrons.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="text-block">
+
+        <h3>2. Número atômico (Z)</h3>
+
+        <p>
+          É a quantidade de
+          <strong>prótons</strong> de um átomo.
+          Esse número identifica o elemento químico.
+        </p>
+
+        <div class="formula-block">
+          Z = número de prótons
+        </div>
+
+        <h3>3. Número de massa (A)</h3>
+
+        <p>
+          É a soma dos
+          <strong>prótons e nêutrons</strong>
+          existentes no núcleo.
+        </p>
+
+        <div class="formula-block">
+          A = prótons + nêutrons
+        </div>
+
+        <div class="formula-block">
+          Nêutrons = A − Z
+        </div>
+
+      </div>
+
+
+
+      <!-- ============================================ -->
+      <!-- ILUSTRAÇÃO DA TABELA PERIÓDICA — GÁLIO        -->
+      <!-- ============================================ -->
+
+
+<div class="text-block">
+        <h3>Identificando um elemento na Tabela Periódica</h3>
+
+        <p>
+          Cada quadrinho da Tabela Periódica apresenta
+          informações importantes sobre um elemento
+          químico. Observe o exemplo do
+          <strong>Gálio (Ga)</strong>.
+        </p>
+      </div>
+
+      <div class="diagram-card">
+
+        <!-- DESENHO PARA COMPUTADOR E DATASHOW -->
+
+        <div class="ga-esquema ga-versao-desktop">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-label="Elemento Gálio da Tabela Periódica,
+      com setas identificando número atômico,
+      símbolo químico, nome e massa atômica média.">
+
+            <defs>
+              <marker id="ga-ponta-seta" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+                <path d="M0,0 L7,3 L0,6 Z" fill="#222" />
+              </marker>
+            </defs>
+
+            <!-- QUADRINHO DO ELEMENTO -->
+
+            <rect x="510" y="20" width="340" height="385" fill="#ffffff" stroke="#151515" stroke-width="6" />
+
+            <!-- NÚMERO ATÔMICO -->
+
+            <text x="535" y="85" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#111">
+              31
+            </text>
+
+            <!-- SÍMBOLO -->
+
+            <text x="680" y="240" font-family="Arial, sans-serif" font-size="125" font-weight="700" text-anchor="middle"
+              fill="#111">
+              Ga
+            </text>
+
+            <!-- NOME -->
+
+            <text x="680" y="315" font-family="Arial, sans-serif" font-size="39" font-weight="700" text-anchor="middle"
+              fill="#111">
+              Gálio
+            </text>
+
+            <!-- MASSA ATÔMICA MÉDIA -->
+
+            <text x="680" y="370" font-family="Arial, sans-serif" font-size="34" text-anchor="middle" fill="#111">
+              69,723
+            </text>
+
+            <!-- LEGENDA: NÚMERO ATÔMICO -->
+
+            <text x="25" y="86" font-family="Arial, sans-serif" font-size="25" font-weight="600" fill="#183d50">
+              Número atômico (Z)
+            </text>
+
+            <line x1="285" y1="78" x2="524" y2="78" stroke="#222" stroke-width="3" marker-end="url(#ga-ponta-seta)" />
+
+            <!-- LEGENDA: SÍMBOLO -->
+
+            <text x="25" y="209" font-family="Arial, sans-serif" font-size="25" font-weight="600" fill="#183d50">
+              Símbolo químico
+            </text>
+
+            <line x1="270" y1="200" x2="602" y2="200" stroke="#222" stroke-width="3" marker-end="url(#ga-ponta-seta)" />
+
+            <!-- LEGENDA: NOME -->
+
+            <text x="25" y="304" font-family="Arial, sans-serif" font-size="25" font-weight="600" fill="#183d50">
+              Nome do elemento
+            </text>
+
+            <line x1="278" y1="295" x2="607" y2="295" stroke="#222" stroke-width="3" marker-end="url(#ga-ponta-seta)" />
+
+            <!-- LEGENDA: MASSA -->
+
+            <text x="25" y="377" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#183d50">
+              Massa atômica média
+            </text>
+
+            <line x1="295" y1="369" x2="602" y2="369" stroke="#222" stroke-width="3" marker-end="url(#ga-ponta-seta)" />
+
+          </svg>
+
+        </div>
+
+        <!-- VERSÃO VERTICAL PARA CELULAR -->
+
+        <div class="ga-versao-celular">
+
+          <div class="ga-cartao-celular">
+
+            <div style="text-align:left;">
+              <strong style="font-size:30px;">31</strong>
+            </div>
+
+            <div style="
+        font-size:90px;
+        font-weight:800;
+        line-height:1.3;
+      ">
+              Ga
+            </div>
+
+            <div style="
+        font-size:29px;
+        font-weight:700;
+      ">
+              Gálio
+            </div>
+
+            <div style="
+        font-size:25px;
+        margin-top:14px;
+      ">
+              69,723
+            </div>
+
+          </div>
+
+          <div class="ga-legenda-celular">
+            <div><strong>31</strong> → Número atômico (Z)</div>
+            <div><strong>Ga</strong> → Símbolo químico</div>
+            <div><strong>Gálio</strong> → Nome do elemento</div>
+            <div><strong>69,723 u</strong> → Massa atômica média</div>
+          </div>
+
+        </div>
+
+        <span class="diagram-caption">
+          Representação de um quadrinho da Tabela Periódica
+          com suas principais informações.
+        </span>
+
+      </div>
+
+      <p class="source-note">
+        No quadrinho do Gálio, 69,723 u representa a massa atômica média.
+        No próximo slide veremos por que ela não é igual ao número de massa A.
+      </p>
+
+      <div class="highlight-box">
+
+        <strong>Exemplo resolvido: Oxigênio-16</strong>
+
+        <p>
+          Um átomo neutro de oxigênio possui
+          número atômico Z = 8 e número de massa A = 16.
+        </p>
+
+        <p>
+          <strong>Prótons:</strong> 8.
+        </p>
+
+        <p>
+          <strong>Nêutrons:</strong> 16 − 8 = 8.
+        </p>
+
+        <p>
+          <strong>Elétrons:</strong> 8,
+          porque o átomo é neutro.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- SLIDE — isotopos-galio -->
+    <section class="slide" id="isotopos-galio">
+
+      <div class="slide-header">
+        <span class="icon-big">🧩</span>
+        <h2>Isótopos: por que a massa pode mudar?</h2>
+        <span class="badge">Exemplo: Gálio</span>
+      </div>
+
+      <div class="text-block">
+
+        <h3>1. O que são isótopos?</h3>
+
+        <p>
+          <strong>Isótopos</strong> são átomos de
+          um mesmo elemento químico que possuem
+          o mesmo número de prótons, mas
+          quantidades diferentes de nêutrons.
+        </p>
+
+        <p>
+          Portanto, possuem o mesmo
+          <strong>número atômico (Z)</strong>,
+          mas diferentes
+          <strong>números de massa (A)</strong>.
+        </p>
+
+        <h3>2. Exemplo: Gálio-69 e Gálio-71</h3>
+
+      </div>
+
+      <div class="q-visual">
+
+        <svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparação dos isótopos
+                     Gálio-69 e Gálio-71">
+
+          <rect x="12" y="12" width="305" height="216" rx="22" fill="#e8f4fa" stroke="#91b6ca" stroke-width="2" />
+
+          <rect x="363" y="12" width="305" height="216" rx="22" fill="#ecf7f1" stroke="#9ac8ac" stroke-width="2" />
+
+          <g text-anchor="middle" font-family="Arial">
+
+            <text x="164" y="57" fill="#174e6c" font-size="30" font-weight="700">
+              Gálio-69
+            </text>
+
+            <text x="516" y="57" fill="#21674b" font-size="30" font-weight="700">
+              Gálio-71
+            </text>
+
+            <text x="164" y="109" fill="#183c52" font-size="24">
+              31 prótons
+            </text>
+
+            <text x="516" y="109" fill="#183c52" font-size="24">
+              31 prótons
+            </text>
+
+            <text x="164" y="148" fill="#183c52" font-size="24">
+              38 nêutrons
+            </text>
+
+            <text x="516" y="148" fill="#183c52" font-size="24">
+              40 nêutrons
+            </text>
+
+            <text x="164" y="196" fill="#164e6a" font-size="21" font-weight="700">
+              A = 31 + 38 = 69
+            </text>
+
+            <text x="516" y="196" fill="#21674b" font-size="21" font-weight="700">
+              A = 31 + 40 = 71
+            </text>
+
+          </g>
+
+        </svg>
+
+      </div>
+
+      <div class="highlight-box">
+
+        <strong>Por que os dois são Gálio?</strong>
+
+        <p>
+          Porque possuem a mesma quantidade
+          de prótons: <strong>31</strong>.
+        </p>
+
+        <p>
+          O que muda é a quantidade de nêutrons.
+        </p>
+
+      </div>
+
+      <div class="text-block">
+
+        <h3>3. Como isso aparece na Tabela Periódica?</h3>
+
+        <p>
+          A Tabela Periódica apresenta a
+          <strong>massa atômica média</strong>
+          de um elemento, considerando as massas
+          e abundâncias de seus isótopos naturais.
+        </p>
+
+      </div>
+
+      <div class="highlight-box">
+        <strong>Por que a Tabela Periódica mostra 69,723 u para o Gálio?</strong>
+        <p>Esse número é a <strong>massa atômica média</strong>, que considera as massas e abundâncias naturais dos isótopos. Não é o número de massa (A) de um único átomo.</p>
+        <p>No Gálio-69, <strong>A = 69</strong>. No Gálio-71, <strong>A = 71</strong>.</p>
+      </div>
+
+      <div class="q-equal">
+        Exemplo resolvido — Gálio-69:
+        31 prótons, 38 nêutrons e,
+        se neutro, 31 elétrons.
+      </div>
+
+    </section>
+
+    <!-- SLIDE — exercicios-02 -->
+    <section class="slide exam-slide" id="exercicios-02">
+
+      <div class="slide-header">
+        <span class="icon-big" aria-hidden="true">📝</span>
+        <h2>Exercício: Prótons, Nêutrons e Isótopos</h2>
+        <span class="badge">ENEM 2009</span>
+      </div>
+
+      <article class="exam-quiz" data-answer="D">
+
+        <p class="exam-meta">
+          ENEM 2009 — QUESTÃO 29
+        </p>
+
+        <h3>Questão 29</h3>
+
+        <div class="exam-statement">
+
+          <p>
+            Os núcleos dos átomos são constituídos de
+            prótons e nêutrons, sendo ambos os principais
+            responsáveis pela sua massa. Nota-se que, na maioria dos
+            núcleos, essas partículas não estão presentes na mesma
+            proporção. A seguir, são apresentados dados acerca da
+            quantidade de nêutrons (N) em função da quantidade de
+            prótons (Z) para os núcleos estáveis conhecidos.
+          </p>
+
+          <!-- DADOS APRESENTADOS NA QUESTÃO -->
+
+          <div class="table-wrap">
+            <table>
+
+              <thead>
+                <tr>
+                  <th>Número de prótons (Z)</th>
+                  <th>Número de nêutrons (N)</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>40</td>
+                  <td>Entre 50 e 56</td>
+                </tr>
+
+                <tr>
+                  <td>50</td>
+                  <td>Entre 62 e 74</td>
+                </tr>
+
+                <tr>
+                  <td>60</td>
+                  <td>Entre 82 e 90</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+
+          <p>
+            O antimônio é um elemento químico que possui 50 prótons
+            e possui vários isótopos ― átomos que só se diferem pelo
+            número de nêutrons. De acordo com os dados
+            apresentados, os isótopos estáveis do antimônio possuem
+          </p>
+
+        </div>
+
+        <!-- ALTERNATIVAS ORIGINAIS -->
+
+        <div class="question-options">
+
+          <label class="option-row">
+            <input type="radio" name="enem-2009-q29" value="A">
+            <span>
+              <b>A)</b> entre 12 e 24 nêutrons a menos que o número de
+              prótons.
+            </span>
+          </label>
+
+          <label class="option-row">
+            <input type="radio" name="enem-2009-q29" value="B">
+            <span>
+              <b>B)</b> exatamente o mesmo número de prótons e nêutrons.
+            </span>
+          </label>
+
+          <label class="option-row">
+            <input type="radio" name="enem-2009-q29" value="C">
+            <span>
+              <b>C)</b> entre 0 e 12 nêutrons a mais que o número de prótons.
+            </span>
+          </label>
+
+          <label class="option-row">
+            <input type="radio" name="enem-2009-q29" value="D">
+            <span>
+              <b>D)</b> entre 12 e 24 nêutrons a mais que o número de
+              prótons.
+            </span>
+          </label>
+
+          <label class="option-row">
+            <input type="radio" name="enem-2009-q29" value="E">
+            <span>
+              <b>E)</b> entre 0 e 12 nêutrons a menos que o número de
+              prótons.
+            </span>
+          </label>
+
+        </div>
+
+        <button type="button" class="check-answer">
+          Conferir resposta
+        </button>
+
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+
+        <!-- GABARITO COMENTADO -->
+
+        <details class="solution-box">
+
+          <summary>Ver gabarito comentado</summary>
+
+          <div class="solution-text">
+
+            <p>
+              <strong>Resposta correta: D.</strong>
+            </p>
+
+            <p>
+              A questão informa que o elemento possui
+              <strong>50 prótons</strong>.
+            </p>
+
+            <p>
+              Consultando a tabela, encontramos:
+            </p>
+
+            <ul>
+              <li>Prótons = 50</li>
+              <li>Nêutrons = entre 62 e 74</li>
+            </ul>
+
+            <p>
+              Precisamos descobrir quantos nêutrons
+              existem a mais em relação aos prótons.
+            </p>
+
+            <p>
+              <strong>Primeiro cálculo:</strong>
+            </p>
+
+            <div class="formula-block">
+              62 − 50 = 12
+            </div>
+
+            <p>
+              <strong>Segundo cálculo:</strong>
+            </p>
+
+            <div class="formula-block">
+              74 − 50 = 24
+            </div>
+
+            <div class="highlight-box">
+              <strong>Conclusão:</strong>
+
+              <p>
+                Os núcleos apresentados possuem
+                entre <strong>12 e 24 nêutrons a mais</strong>
+                que o número de prótons.
+              </p>
+
+              <p>
+                Portanto, a alternativa correta é
+                <strong>D</strong>.
+              </p>
+            </div>
+
+          </div>
+
+        </details>
+
+        <p class="exam-source">
+          <a href="https://download.inep.gov.br/educacao_basica/enem/provas/2009/dia1_caderno3_branco_ledor.pdf"
+            target="_blank" rel="noopener noreferrer">
+            Consultar prova de origem — Inep
+          </a>
+        </p>
+
+      </article>
+
+      <!-- OBSERVAÇÃO CIENTÍFICA FORA DO ENUNCIADO -->
+
+      <p class="source-note">
+        Observação: o enunciado fornecido identifica
+        o antimônio com 50 prótons. Essa identificação
+        está incorreta: o antimônio (Sb) possui Z = 51,
+        enquanto o estanho (Sn) possui Z = 50.
+        O texto da questão foi preservado.
+      </p>
+
+    </section>
+
+    <!-- SLIDE — ions-cations-anions -->
+    <section class="slide" id="ions-cations-anions">
+
+      <div class="slide-header">
+        <span class="icon-big">⚡</span>
+        <h2>Íons: cátions e ânions</h2>
+        <span class="badge">Carga elétrica</span>
+      </div>
+
+      <div class="text-block">
+
+        <h3>1. O que são íons?</h3>
+
+        <p>
+          Um átomo neutro possui a mesma
+          quantidade de prótons e elétrons.
+        </p>
+
+        <p>
+          Quando perde ou ganha elétrons,
+          passa a apresentar carga elétrica
+          e recebe o nome de
+          <strong>íon</strong>.
+        </p>
+
+        <p>
+          A quantidade de prótons permanece
+          a mesma. Portanto, o elemento
+          químico não muda.
+        </p>
+
+      </div>
+
+      <div class="q-cards">
+
+        <div class="q-card">
+
+          <h3>2. Cátion (+)</h3>
+
+          <p>
+            Um cátion é formado quando
+            um átomo <strong>perde elétrons</strong>.
+          </p>
+
+          <div class="q-arrow-row">
+
+            <div class="q-ion">
+              <strong>Na</strong>
+              <small>11 prótons</small>
+              <small>11 elétrons</small>
+              <small>Átomo neutro</small>
+            </div>
+
+            <div class="q-ion-arrow">
+              perde 1 e⁻ →
+            </div>
+
+            <div class="q-ion" style="
+               background:#e1f1e9;
+               border-color:#84c49c;
+             ">
+
+              <strong>Na⁺</strong>
+              <small>11 prótons</small>
+              <small>10 elétrons</small>
+              <small>Carga +1</small>
+
+            </div>
+
+          </div>
+
+          <div class="formula-block">
+            Na → Na⁺ + e⁻
+          </div>
+
+          <p>
+            O sódio perde um elétron e
+            fica com mais cargas positivas
+            do que negativas.
+          </p>
+
+        </div>
+
+        <div class="q-card">
+
+          <h3>3. Ânion (−)</h3>
+
+          <p>
+            Um ânion é formado quando
+            um átomo <strong>ganha elétrons</strong>.
+          </p>
+
+          <div class="q-arrow-row">
+
+            <div class="q-ion">
+              <strong>Cl</strong>
+              <small>17 prótons</small>
+              <small>17 elétrons</small>
+              <small>Átomo neutro</small>
+            </div>
+
+            <div class="q-ion-arrow">
+              ganha 1 e⁻ →
+            </div>
+
+            <div class="q-ion" style="
+               background:#e9e9fa;
+               border-color:#b5a8d9;
+             ">
+
+              <strong>Cl⁻</strong>
+              <small>17 prótons</small>
+              <small>18 elétrons</small>
+              <small>Carga −1</small>
+
+            </div>
+
+          </div>
+
+          <div class="formula-block">
+            Cl + e⁻ → Cl⁻
+          </div>
+
+          <p>
+            O cloro ganha um elétron e
+            fica com mais cargas negativas
+            do que positivas.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="highlight-box">
+
+        <strong>Diferença entre íons e isótopos</strong>
+
+        <p>
+          Nos <strong>isótopos</strong>,
+          muda a quantidade de nêutrons.
+        </p>
+
+        <p>
+          Nos <strong>íons</strong>,
+          muda a quantidade de elétrons.
+        </p>
+      </div>
+    </section>
+
+    <!-- SLIDE — tabela-modelos -->
+    <section class="slide" id="tabela-modelos">
+
+      <div class="slide-header">
+        <span class="icon-big">🧪</span>
+        <h2>Conhecendo a Tabela Periódica</h2>
+        <span class="badge">Elementos químicos</span>
+      </div>
+
+      <div class="text-block">
+
+        <h3>1. O que é a Tabela Periódica?</h3>
+
+        <p>
+          A <strong>Tabela Periódica</strong>
+          é uma organização dos elementos químicos
+          em ordem crescente de
+          <strong>número atômico (Z)</strong>.
+        </p>
+
+        <p>
+          O número atômico corresponde à
+          quantidade de prótons de um átomo.
+        </p>
+
+        <p>
+          Por exemplo, o hidrogênio tem Z = 1,
+          o hélio tem Z = 2 e o lítio tem Z = 3.
+        </p>
+
+        <div class="highlight-box">
+
+          <strong>Regra principal</strong>
+
+          <p>
+            A posição de um elemento na
+            Tabela Periódica é determinada
+            por seu <strong>número atômico</strong>,
+            não por sua massa.
+          </p>
+
+        </div>
+
+        <h3>2. Como os elementos aparecem organizados?</h3>
+        <p>O quadrinho do Gálio já mostrou número atômico, símbolo, nome e massa atômica média. Na Tabela Periódica, esses quadrinhos são organizados pelo <strong>número atômico crescente</strong>.</p>
+        <p>Veja a sequência dos três primeiros elementos:</p>
+      </div>
+
+      <div class="qa-mini-grid" aria-label="Sequência dos primeiros elementos na Tabela Periódica">
+        <div class="qa-card" style="text-align:center;background:#e4f2fb">
+          <strong style="font-size:1.7rem">1 — H</strong>
+          <p>Hidrogênio</p>
+        </div>
+        <div class="qa-card" style="text-align:center;background:#ece6f8">
+          <strong style="font-size:1.7rem">2 — He</strong>
+          <p>Hélio</p>
+        </div>
+        <div class="qa-card" style="text-align:center;background:#e7f3e9">
+          <strong style="font-size:1.7rem">3 — Li</strong>
+          <p>Lítio</p>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <strong>O que aprenderemos a seguir?</strong>
+        <p>Como interpretar as <strong>linhas (períodos)</strong> e as <strong>colunas (grupos ou famílias)</strong> para localizar qualquer elemento.</p>
+      </div>
+
+    </section>
+
+    <!-- SLIDE — grupos-periodos -->
+    <section class="slide" id="grupos-periodos">
+
+      <div class="slide-header">
+        <span class="icon-big">🗂️</span>
+        <h2>Como funciona a Tabela Periódica?</h2>
+        <span class="badge">Grupos e períodos</span>
+      </div>
+
+      <div class="text-block">
+
+        <h3>1. Grupos e períodos</h3>
+
+        <p>
+          A Tabela Periódica possui
+          <strong>7 períodos</strong> e
+          <strong>18 grupos</strong>.
+        </p>
+
+      </div>
+
+      <div class="content-grid">
+
+        <div class="qa-card">
+
+          <h3>Períodos — linhas horizontais</h3>
+
+          <p>
+            São as linhas da Tabela Periódica,
+            numeradas de 1 a 7.
+          </p>
+
+          <p>
+            Os elementos de um mesmo período
+            possuem igual número de níveis
+            principais de energia ocupados
+            em seus átomos no estado fundamental.
+          </p>
+
+        </div>
+
+        <div class="qa-card">
+
+          <h3>Grupos — colunas verticais</h3>
+
+          <p>
+            São as colunas da Tabela Periódica,
+            numeradas de 1 a 18.
+          </p>
+
+          <p>
+            Os elementos de um mesmo grupo
+            geralmente apresentam
+            <strong>propriedades químicas semelhantes</strong>.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- MAPA PARCIAL DA TABELA PERIÓDICA -->
+
+      <div class="qa-figure">
+
+        <h3 style="text-align:center;margin-bottom:10px">
+          Localizando o Gálio
+        </h3>
+
+        <p style="text-align:center">
+          Esquema dos quatro primeiros períodos,
+          com alguns grupos em destaque.
+        </p>
+
+        <div class="table-wrap" style="overflow-x:auto">
+
+          <div class="qa-periodic">
+
+            <!-- CABEÇALHO DE GRUPOS -->
+
+            <div class="group" style="grid-column:1;grid-row:1">1</div>
+            <div class="group" style="grid-column:2;grid-row:1">2</div>
+            <div class="group" style="grid-column:13;grid-row:1">13</div>
+            <div class="group" style="grid-column:14;grid-row:1">14</div>
+            <div class="group" style="grid-column:15;grid-row:1">15</div>
+            <div class="group" style="grid-column:16;grid-row:1">16</div>
+            <div class="group" style="grid-column:17;grid-row:1">17</div>
+            <div class="group" style="grid-column:18;grid-row:1">18</div>
+
+            <!-- PERÍODO 1 -->
+
+            <div class="el ametal" style="grid-column:1;grid-row:2">
+              <strong>H</strong><small>1</small>
+            </div>
+
+            <div class="el nobre" style="grid-column:18;grid-row:2">
+              <strong>He</strong><small>2</small>
+            </div>
+
+            <!-- PERÍODO 2 -->
+
+            <div class="el metal" style="grid-column:1;grid-row:3">
+              <strong>Li</strong><small>3</small>
+            </div>
+
+            <div class="el metal" style="grid-column:2;grid-row:3">
+              <strong>Be</strong><small>4</small>
+            </div>
+
+            <div class="el" style="grid-column:13;grid-row:3">
+              <strong>B</strong><small>5</small>
+            </div>
+
+            <div class="el ametal" style="grid-column:14;grid-row:3">
+              <strong>C</strong><small>6</small>
+            </div>
+
+            <div class="el ametal" style="grid-column:15;grid-row:3">
+              <strong>N</strong><small>7</small>
+            </div>
+
+            <div class="el ametal" style="grid-column:16;grid-row:3">
+              <strong>O</strong><small>8</small>
+            </div>
+
+            <div class="el ametal" style="grid-column:17;grid-row:3">
+              <strong>F</strong><small>9</small>
+            </div>
+
+            <div class="el nobre" style="grid-column:18;grid-row:3">
+              <strong>Ne</strong><small>10</small>
+            </div>
+
+            <!-- PERÍODO 3 -->
+
+            <div class="el metal" style="grid-column:1;grid-row:4">
+              <strong>Na</strong><small>11</small>
+            </div>
+
+            <div class="el metal" style="grid-column:2;grid-row:4">
+              <strong>Mg</strong><small>12</small>
+            </div>
+
+            <div class="el metal" style="grid-column:13;grid-row:4">
+              <strong>Al</strong><small>13</small>
+            </div>
+
+            <div class="el" style="grid-column:14;grid-row:4">
+              <strong>Si</strong><small>14</small>
+            </div>
+
+            <div class="el ametal" style="grid-column:15;grid-row:4">
+              <strong>P</strong><small>15</small>
+            </div>
+
+            <div class="el ametal" style="grid-column:16;grid-row:4">
+              <strong>S</strong><small>16</small>
+            </div>
+
+            <div class="el ametal" style="grid-column:17;grid-row:4">
+              <strong>Cl</strong><small>17</small>
+            </div>
+
+            <div class="el nobre" style="grid-column:18;grid-row:4">
+              <strong>Ar</strong><small>18</small>
+            </div>
+
+            <!-- PERÍODO 4 -->
+
+            <div class="el metal" style="grid-column:1;grid-row:5">
+              <strong>K</strong><small>19</small>
+            </div>
+
+            <div class="el metal" style="grid-column:2;grid-row:5">
+              <strong>Ca</strong><small>20</small>
+            </div>
+
+            <div class="el" style="
+               grid-column:3 / span 10;
+               grid-row:5;
+               background:#e6edf0;
+               display:grid;
+               place-items:center;
+               border-radius:8px;
+               font-size:13px;
+               color:#34515f;
+             ">
+              Grupos 3 a 12:
+              metais de transição
+            </div>
+
+            <div class="el destaque" style="grid-column:13;grid-row:5">
+              <strong>Ga</strong><small>31</small>
+            </div>
+
+            <div class="el" style="grid-column:14;grid-row:5">
+              <strong>Ge</strong><small>32</small>
+            </div>
+
+            <div class="el" style="grid-column:15;grid-row:5">
+              <strong>As</strong><small>33</small>
+            </div>
+
+            <div class="el ametal" style="grid-column:16;grid-row:5">
+              <strong>Se</strong><small>34</small>
+            </div>
+
+            <div class="el ametal" style="grid-column:17;grid-row:5">
+              <strong>Br</strong><small>35</small>
+            </div>
+
+            <div class="el nobre" style="grid-column:18;grid-row:5">
+              <strong>Kr</strong><small>36</small>
+            </div>
+
+          </div>
+
+        </div>
+
+        <p class="diagram-caption">
+          Representação parcial da Tabela Periódica.
+          Os períodos 5 a 7 não estão mostrados.
+          No grupo 1, o hidrogênio não é um metal alcalino.
+        </p>
+
+      </div>
+
+      <div class="highlight-box">
+
+        <strong>Localização do Gálio</strong>
+
+        <p>
+          O Gálio (Ga) está no
+          <strong>4º período</strong>
+          e no <strong>grupo 13</strong>.
+        </p>
+
+        <p>
+          Mais adiante, veremos como sua
+          distribuição eletrônica ajuda
+          a explicar essa localização.
+        </p>
+
+      </div>
+
+      <div class="text-block">
+
+        <h3>2. Famílias importantes</h3>
+
+      </div>
+
+      <div class="qa-mini-grid">
+
+        <div class="qa-card">
+
+          <h3>Grupo 1 — Metais alcalinos</h3>
+
+          <p>
+            Inclui lítio, sódio e potássio.
+            São metais bastante reativos.
+          </p>
+
+        </div>
+
+        <div class="qa-card">
+
+          <h3>Grupo 2 — Alcalino-terrosos</h3>
+
+          <p>
+            Inclui magnésio e cálcio.
+            Também são metais.
+          </p>
+
+        </div>
+
+        <div class="qa-card">
+
+          <h3>Grupo 17 — Halogênios</h3>
+
+          <p>
+            Inclui flúor, cloro e bromo.
+            São elementos bastante reativos.
+          </p>
+
+        </div>
+
+        <div class="qa-card">
+
+          <h3>Grupo 18 — Gases nobres</h3>
+
+          <p>
+            Inclui hélio, neônio e argônio.
+            São pouco reativos em condições comuns.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="text-block">
+
+        <h3>3. Metais, ametais e semimetais</h3>
+
+        <p>
+          A Tabela Periódica também ajuda
+          a classificar os elementos
+          de acordo com suas propriedades.
+        </p>
+
+      </div>
+
+      <div class="qa-mini-grid">
+
+        <div class="qa-card">
+
+          <h3>Metais</h3>
+
+          <p>
+            Geralmente apresentam boa
+            condução elétrica e térmica.
+          </p>
+
+          <p>
+            Exemplos: ferro, cobre e gálio.
+          </p>
+
+        </div>
+
+        <div class="qa-card">
+
+          <h3>Ametais</h3>
+
+          <p>
+            Apresentam propriedades variadas
+            e geralmente são maus condutores
+            de eletricidade.
+          </p>
+
+          <p>
+            Exemplos: oxigênio, enxofre e carbono.
+          </p>
+
+        </div>
+
+        <div class="qa-card">
+
+          <h3>Semimetais</h3>
+
+          <p>
+            Apresentam características
+            intermediárias entre
+            metais e ametais.
+          </p>
+
+          <p>
+            Exemplos: silício e germânio.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SLIDE — modelos-atomicos -->
+    <section class="slide" id="modelos-atomicos">
+
+      <div class="slide-header">
+        <span class="icon-big">⚛️</span>
+        <h2>Evolução dos Modelos Atômicos</h2>
+        <span class="badge">História da ciência</span>
+      </div>
+
+      <div class="text-block">
+
+        <h3>1. Por que existem diferentes modelos?</h3>
+
+        <p>
+          Os cientistas não conseguiram
+          compreender a estrutura do átomo
+          de uma só vez.
+        </p>
+
+        <p>
+          Cada novo experimento trouxe
+          evidências que permitiram
+          aperfeiçoar os modelos anteriores.
+        </p>
+
+        <div class="highlight-box">
+
+          <strong>O que é um modelo científico?</strong>
+
+          <p>
+            É uma representação utilizada
+            para explicar fenômenos
+            com base em evidências.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="text-block">
+
+        <h3>2. Os principais modelos</h3>
+
+      </div>
+
+      <div class="qa-modelos">
+
+        <!-- DALTON -->
+
+        <div class="qa-modelo">
+
+          <h3>Dalton</h3>
+
+          <svg viewBox="0 0 130 125" xmlns="http://www.w3.org/2000/svg">
+
+            <circle cx="65" cy="62" r="43" fill="#6d98a9" stroke="#3e6879" stroke-width="3" />
+
+            <circle cx="49" cy="45" r="13" fill="#b3d4dc" opacity=".55" />
+
+          </svg>
+
+          <p><strong>Bola de bilhar</strong></p>
+
+          <p>
+            Átomo como esfera maciça
+            e indivisível.
+          </p>
+
+        </div>
+
+        <!-- THOMSON -->
+
+        <div class="qa-modelo">
+
+          <h3>Thomson</h3>
+
+          <svg viewBox="0 0 130 125" xmlns="http://www.w3.org/2000/svg">
+
+            <circle cx="65" cy="62" r="45" fill="#f1c889" stroke="#c59045" stroke-width="3" />
+
+            <g fill="#345d84">
+              <circle cx="46" cy="42" r="7" />
+              <circle cx="82" cy="39" r="7" />
+              <circle cx="59" cy="65" r="7" />
+              <circle cx="91" cy="78" r="7" />
+              <circle cx="42" cy="88" r="7" />
+            </g>
+
+          </svg>
+
+          <p><strong>Pudim de passas</strong></p>
+
+          <p>
+            Elétrons distribuídos
+            em uma esfera de carga positiva.
+          </p>
+
+        </div>
+
+        <!-- RUTHERFORD -->
+
+        <div class="qa-modelo">
+
+          <h3>Rutherford</h3>
+
+          <svg viewBox="0 0 130 125" xmlns="http://www.w3.org/2000/svg">
+
+            <ellipse cx="65" cy="62" rx="58" ry="28" transform="rotate(35 65 62)" fill="none" stroke="#7fa6b7"
+              stroke-width="2" />
+
+            <ellipse cx="65" cy="62" rx="58" ry="28" transform="rotate(-35 65 62)" fill="none" stroke="#7fa6b7"
+              stroke-width="2" />
+
+            <circle cx="65" cy="62" r="12" fill="#d88396" />
+
+            <circle cx="26" cy="35" r="6" fill="#3b7ca3" />
+
+            <circle cx="105" cy="90" r="6" fill="#3b7ca3" />
+
+          </svg>
+
+          <p><strong>Modelo nuclear</strong></p>
+
+          <p>
+            Núcleo pequeno e denso,
+            com grande região ao redor.
+          </p>
+
+        </div>
+
+        <!-- BOHR -->
+
+        <div class="qa-modelo">
+
+          <h3>Bohr</h3>
+
+          <svg viewBox="0 0 130 125" xmlns="http://www.w3.org/2000/svg">
+
+            <g fill="none" stroke="#7fa6b7" stroke-width="2">
+
+              <circle cx="65" cy="62" r="20" />
+              <circle cx="65" cy="62" r="38" />
+              <circle cx="65" cy="62" r="55" />
+
+            </g>
+
+            <circle cx="65" cy="62" r="11" fill="#d88396" />
+
+            <g fill="#3b7ca3">
+              <circle cx="85" cy="62" r="6" />
+              <circle cx="38" cy="35" r="6" />
+              <circle cx="120" cy="62" r="6" />
+            </g>
+
+          </svg>
+
+          <p><strong>Níveis de energia</strong></p>
+
+          <p>
+            Elétrons associados a
+            níveis de energia determinados.
+          </p>
+
+        </div>
+
+        <!-- MODELO QUÂNTICO -->
+
+        <div class="qa-modelo">
+
+          <h3>Modelo quântico</h3>
+
+          <svg viewBox="0 0 130 125" xmlns="http://www.w3.org/2000/svg">
+
+            <defs>
+              <radialGradient id="qa-nuvem">
+                <stop offset="0%" stop-color="#4c8fb7" stop-opacity=".95" />
+                <stop offset="60%" stop-color="#8dbcd6" stop-opacity=".5" />
+                <stop offset="100%" stop-color="#c5e5f2" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+
+            <ellipse cx="65" cy="62" rx="59" ry="55" fill="url(#qa-nuvem)" />
+
+            <circle cx="65" cy="62" r="7" fill="#d88396" />
+
+          </svg>
+
+          <p><strong>Orbitais</strong></p>
+
+          <p>
+            Regiões descritas por
+            probabilidades de localização.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="text-block">
+
+        <h3>3. O experimento de Rutherford</h3>
+
+        <p>
+          Rutherford estudou o comportamento
+          de partículas alfa ao atingirem
+          uma fina lâmina de ouro.
+        </p>
+
+        <p>
+          A maior parte atravessou a lâmina.
+          Uma pequena quantidade sofreu
+          desvios intensos.
+        </p>
+
+        <p>
+          A conclusão foi que o átomo
+          apresenta um núcleo muito pequeno,
+          denso e positivamente carregado.
+        </p>
+
+        <h3>4. O que Bohr acrescentou?</h3>
+
+        <p>
+          Bohr propôs que os elétrons
+          podem apresentar
+          <strong>níveis de energia definidos</strong>.
+        </p>
+
+        <p>
+          Um elétron pode absorver energia
+          e passar para um estado mais energético.
+          Ao retornar para outro de menor energia,
+          pode emitir luz.
+        </p>
+
+      </div>
+
+      <div class="highlight-box">
+
+        <strong>Ligação com o próximo assunto</strong>
+
+        <p>
+          Agora que conhecemos os níveis de energia
+          do modelo de Bohr, podemos estudar
+          <strong>como os elétrons se distribuem</strong>
+          nesses níveis.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- SLIDE — exercicios-03 -->
+    <section class="slide exam-slide" id="exercicios-03">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>Pratique: modelos atômicos</h2><span class="badge">ENEM / ENCCEJA</span>
+      </div>
+      <p class="exam-intro">Atividade autossuficiente, <strong>adaptada de questão realmente aplicada</strong>. O texto
+        e as alternativas foram reescritos para facilitar o estudo. Marque a resposta e abra o comentário somente
+        depois.</p>
+      <article class="exam-quiz" data-answer="D">
+        <p class="exam-meta">ENEM 2019 · 2º dia, caderno azul · nº 105 · questão adaptada</p>
+        <h3>Questão 03</h3>
+        <div class="exam-statement">
+          <p>Um teste de chama permite reconhecer certos íons metálicos pela <strong>cor da luz emitida</strong> quando
+            uma pequena amostra é aquecida. A emissão de luz ocorre principalmente porque há:</p>
+        </div>
+
+        <div class="question-options"><label class="option-row"><input type="radio" name="quest-03"
+              value="A"><span><b>A)</b> Fusão do metal antes de emitir luz.</span></label><label
+            class="option-row"><input type="radio" name="quest-03" value="B"><span><b>B)</b> Combustão obrigatória dos
+              íons metálicos.</span></label><label class="option-row"><input type="radio" name="quest-03"
+              value="C"><span><b>C)</b> Redução da energia cinética do elétron sem mudar de nível.</span></label><label
+            class="option-row"><input type="radio" name="quest-03" value="D"><span><b>D)</b> Passagem de elétrons de
+              estados de maior energia para outros de menor energia.</span></label><label class="option-row"><input
+              type="radio" name="quest-03" value="E"><span><b>E)</b> Apenas absorção de energia, sem emissão de
+              radiação.</span></label></div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Alternativa D.</strong> Na volta a um estado de menor energia, ocorre
+            emissão de fótons. A questão se conecta ao modelo de Bohr e à quantização de energia.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/educacao_basica/enem/provas/2019/caderno_de_questoes_2_dia_caderno_7_azul_aplicacao_regular.pdf"
+            target="_blank" rel="noopener noreferrer">Consultar a prova de origem (Inep) ↗</a></p>
+      </article>
+      <article class="exam-quiz exam-from-material" data-answer="C">
+        <p class="exam-meta">Exercício do material Aula 05 (não é questão oficial)</p>
+        <h3>Complemento: experimento de Rutherford</h3>
+        <p>O experimento da lâmina de ouro indicou que:</p>
+        <div class="question-options"><label class="option-row"><input type="radio" name="quest-rutherford"
+              value="A"><span><b>A)</b> o átomo é maciço em todo seu volume.</span></label><label
+            class="option-row"><input type="radio" name="quest-rutherford" value="B"><span><b>B)</b> os elétrons estão
+              imersos em uma esfera positiva.</span></label><label class="option-row"><input type="radio"
+              name="quest-rutherford" value="C"><span><b>C)</b> o átomo contém um núcleo pequeno e
+              denso.</span></label><label class="option-row"><input type="radio" name="quest-rutherford"
+              value="D"><span><b>D)</b> não existem partículas menores que o átomo.</span></label></div><button
+          type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Alternativa C.</strong> A maior parte das partículas atravessou a lâmina;
+            poucas sofreram fortes desvios, evidenciando um núcleo compacto.</div>
+        </details>
+      </article>
+
+    </section>
+
+    <!-- SLIDE — camadas-eletronicas -->
+    <section class="slide" id="camadas-eletronicas">
+
+      <div class="slide-header">
+        <span class="icon-big">🌈</span>
+        <h2>Distribuição Eletrônica: Níveis de Energia</h2>
+        <span class="badge">Camadas eletrônicas</span>
+      </div>
+
+      <div class="text-block">
+
+        <h3>1. O que é distribuição eletrônica?</h3>
+
+        <p>
+          É a representação de como
+          os elétrons estão organizados
+          nos níveis e subníveis
+          de energia de um átomo.
+        </p>
+
+        <p>
+          Inicialmente, estudaremos a
+          distribuição por
+          <strong>camadas eletrônicas</strong>.
+        </p>
+
+        <h3>2. Quais são as camadas?</h3>
+
+        <p>
+          As camadas recebem as letras
+          K, L, M, N, O, P e Q,
+          da mais interna para a mais externa.
+        </p>
+
+        <div class="formula-block">
+          K → L → M → N → O → P → Q
+        </div>
+
+      </div>
+
+      <div class="content-grid">
+
+        <div class="text-block">
+
+          <h3>Capacidade máxima das camadas</h3>
+
+          <div class="table-wrap">
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Camada</th>
+                  <th>Máximo de elétrons</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>K</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>L</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>M</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>N</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>O</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>P</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>Q</td>
+                  <td>8</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <p class="source-note">
+            Capacidades convencionais utilizadas
+            na representação escolar.
+            A distribuição real depende
+            da energia dos subníveis.
+          </p>
+
+        </div>
+
+        <div class="text-block">
+
+          <h3>Exemplo: Sódio (Na)</h3>
+
+          <p>
+            O sódio possui número atômico 11.
+            Um átomo neutro de sódio
+            possui <strong>11 elétrons</strong>.
+          </p>
+
+          <div class="qa-level">
+            <strong>Camada K</strong>
+            <span>2 elétrons</span>
+          </div>
+
+          <div class="qa-level">
+            <strong>Camada L</strong>
+            <span>8 elétrons</span>
+          </div>
+
+          <div class="qa-level valencia">
+            <strong>Camada M</strong>
+            <span>1 elétron</span>
+          </div>
+
+          <div class="formula-block">
+            2 + 8 + 1 = 11
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="text-block">
+
+        <h3>3. O que é camada de valência?</h3>
+
+        <p>
+          É a camada ocupada mais externa
+          de um átomo.
+        </p>
+
+        <p>
+          Os elétrons presentes nessa camada
+          são chamados de
+          <strong>elétrons de valência</strong>.
+        </p>
+
+        <p>
+          Eles estão relacionados ao comportamento
+          químico dos elementos e à formação
+          de ligações químicas.
+        </p>
+
+      </div>
+
+      <div class="qa-mini-grid">
+
+        <div class="qa-card">
+
+          <h3>Oxigênio — Z = 8</h3>
+
+          <div class="formula-block">
+            2 – 6
+          </div>
+
+          <p>Camada de valência: L.</p>
+          <p>6 elétrons de valência.</p>
+
+        </div>
+
+        <div class="qa-card">
+
+          <h3>Sódio — Z = 11</h3>
+
+          <div class="formula-block">
+            2 – 8 – 1
+          </div>
+
+          <p>Camada de valência: M.</p>
+          <p>1 elétron de valência.</p>
+
+        </div>
+
+        <div class="qa-card">
+
+          <h3>Cálcio — Z = 20</h3>
+
+          <div class="formula-block">
+            2 – 8 – 8 – 2
+          </div>
+
+          <p>Camada de valência: N.</p>
+          <p>2 elétrons de valência.</p>
+
+        </div>
+
+      </div>
+
+      <div class="highlight-box">
+
+        <strong>Relacionando com a Tabela Periódica</strong>
+
+        <p>
+          O número de camadas ocupadas
+          de um átomo no estado fundamental
+          corresponde ao seu
+          <strong>período</strong>.
+        </p>
+
+        <p>
+          O sódio possui 3 camadas ocupadas:
+          portanto, está no 3º período.
+        </p>
+
+        <p>
+          O cálcio possui 4 camadas ocupadas:
+          portanto, está no 4º período.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- SLIDE — subniveis-eletronicos -->
+    <section class="slide" id="subniveis-eletronicos">
+
+      <div class="slide-header">
+        <span class="icon-big">⚛️</span>
+        <h2>Subníveis de Energia e Configuração Eletrônica</h2>
+        <span class="badge">s, p, d e f</span>
+      </div>
+
+      <div class="text-block">
+
+        <h3>1. O que são subníveis?</h3>
+
+        <p>
+          Os níveis eletrônicos são organizados
+          em subníveis, representados pelas letras
+          <strong>s, p, d e f</strong>.
+        </p>
+
+        <p>
+          Cada subnível comporta uma
+          quantidade máxima de elétrons.
+        </p>
+
+      </div>
+
+      <div class="table-wrap">
+
+        <table>
+          <thead>
+            <tr>
+              <th>Subnível</th>
+              <th>Máximo de elétrons</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>s</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>p</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>d</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>f</td>
+              <td>14</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="highlight-box">
+
+        <strong>Como interpretar 3d¹⁰?</strong>
+
+        <p>
+          O número <strong>3</strong> indica
+          o nível de energia.
+        </p>
+
+        <p>
+          A letra <strong>d</strong>
+          identifica o subnível.
+        </p>
+
+        <p>
+          O número <strong>10</strong>
+          indica quantos elétrons
+          estão nesse subnível.
+        </p>
+
+      </div>
+
+      <div class="text-block">
+
+        <h3>2. Ordem de preenchimento</h3>
+
+        <p>
+          Os elétrons ocupam, em geral,
+          primeiro os subníveis
+          de menor energia disponíveis.
+        </p>
+
+        <p>
+          Para os primeiros 31 elétrons,
+          a ordem utilizada é:
+        </p>
+
+        <div class="formula-block" style="
+           line-height:2;
+           overflow-wrap:anywhere;
+           font-size:1rem;
+         ">
+
+          1s² → 2s² → 2p⁶ → 3s² → 3p⁶ →
+          4s² → 3d¹⁰ → 4p¹
+
+        </div>
+
+        <p>
+          Observe que o subnível
+          <strong>4s</strong> é preenchido
+          antes do <strong>3d</strong>.
+        </p>
+
+      </div>
+
+      <!-- EXEMPLO COMPLETO COM O GÁLIO -->
+
+      <div class="text-block">
+
+        <h3>3. Exemplo: configuração eletrônica do Gálio</h3>
+
+        <p>
+          O Gálio (Ga) tem Z = 31.
+          Um átomo neutro possui
+          31 prótons e 31 elétrons.
+        </p>
+
+        <p>
+          Vamos distribuir esses 31 elétrons.
+        </p>
+
+      </div>
+
+      <div class="content-grid">
+
+        <div class="text-block">
+
+          <h3>Distribuição por subníveis</h3>
+
+          <div class="qa-card">
+            <strong>1s²</strong>
+            <p>2 elétrons</p>
+          </div>
+
+          <div class="qa-card">
+            <strong>2s² 2p⁶</strong>
+            <p>8 elétrons</p>
+          </div>
+
+          <div class="qa-card">
+            <strong>3s² 3p⁶</strong>
+            <p>8 elétrons</p>
+          </div>
+
+          <div class="qa-card">
+            <strong>4s²</strong>
+            <p>2 elétrons</p>
+          </div>
+
+          <div class="qa-card">
+            <strong>3d¹⁰</strong>
+            <p>10 elétrons</p>
+          </div>
+
+          <div class="qa-card">
+            <strong>4p¹</strong>
+            <p>1 elétron</p>
+          </div>
+
+          <div class="formula-block">
+            2 + 8 + 8 + 2 + 10 + 1 = 31
+          </div>
+
+        </div>
+
+        <div class="text-block">
+
+          <h3>Organizando por camadas</h3>
+
+          <p>
+            Agora agrupamos os subníveis
+            pelo número que os acompanha.
+          </p>
+
+          <div class="qa-level">
+            <strong>K — 1s²</strong>
+            <span>2 e⁻</span>
+          </div>
+
+          <div class="qa-level">
+            <strong>L — 2s² 2p⁶</strong>
+            <span>8 e⁻</span>
+          </div>
+
+          <div class="qa-level">
+            <strong>M — 3s² 3p⁶ 3d¹⁰</strong>
+            <span>18 e⁻</span>
+          </div>
+
+          <div class="qa-level valencia">
+            <strong>N — 4s² 4p¹</strong>
+            <span>3 e⁻</span>
+          </div>
+
+          <div class="formula-block">
+            2 – 8 – 18 – 3
+          </div>
+
+          <div class="highlight-box">
+
+            <strong>Camada de valência do Gálio</strong>
+
+            <p>
+              A camada mais externa é a
+              <strong>N</strong>,
+              com <strong>3 elétrons</strong>.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="text-block">
+
+        <h3>4. Voltando à Tabela Periódica</h3>
+
+        <p>
+          Agora podemos relacionar a
+          configuração eletrônica do Gálio
+          com sua posição na Tabela Periódica.
+        </p>
+
+      </div>
+
+      <div class="qa-mini-grid">
+
+        <div class="qa-card">
+
+          <h3>Por que 4º período?</h3>
+
+          <p>
+            Porque seu nível mais externo
+            ocupado é o
+            <strong>4º nível (camada N)</strong>.
+          </p>
+
+        </div>
+
+        <div class="qa-card">
+
+          <h3>Por que grupo 13?</h3>
+
+          <p>
+            O Gálio é um elemento representativo
+            que possui
+            <strong>3 elétrons de valência</strong>.
+          </p>
+
+          <p>
+            Sua configuração externa
+            é <strong>4s² 4p¹</strong>,
+            característica do grupo 13.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="highlight-box">
+
+        <strong>Conclusão</strong>
+
+        <p>
+          O número atômico identifica o elemento.
+          A configuração eletrônica mostra
+          como seus elétrons estão distribuídos.
+        </p>
+
+        <p>
+          Essa organização ajuda a compreender
+          sua posição na Tabela Periódica
+          e suas propriedades químicas.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- SLIDE — exercicios-04 -->
+    <section class="slide exam-slide" id="exercicios-04">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>Pratique: elétrons e energia</h2><span class="badge">ENEM / ENCCEJA</span>
+      </div>
+      <p class="exam-intro">Atividade autossuficiente, <strong>adaptada de questão realmente aplicada</strong>. O texto
+        e as alternativas foram reescritos para facilitar o estudo. Marque a resposta e abra o comentário somente
+        depois.</p>
+      <article class="exam-quiz" data-answer="C">
+        <p class="exam-meta">ENEM 2024 · 2º dia, caderno azul · nº 125 · questão adaptada</p>
+        <h3>Questão 04</h3>
+        <div class="exam-statement">
+          <p>Placas que indicam saída de emergência podem continuar emitindo brilho amarelo-esverdeado mesmo depois de a
+            iluminação ambiente ser desligada. Certos materiais, como o sulfeto de zinco dopado, apresentam esse
+            comportamento. Qual processo microscópico explica a emissão de luz?</p>
+        </div>
+
+        <div class="question-options"><label class="option-row"><input type="radio" name="quest-04"
+              value="A"><span><b>A)</b> Choques entre átomos.</span></label><label class="option-row"><input
+              type="radio" name="quest-04" value="B"><span><b>B)</b> A existência de uma cor fixa de cada
+              átomo.</span></label><label class="option-row"><input type="radio" name="quest-04"
+              value="C"><span><b>C)</b> Transições entre estados eletrônicos.</span></label><label
+            class="option-row"><input type="radio" name="quest-04" value="D"><span><b>D)</b> Transformações nos núcleos
+              atômicos.</span></label><label class="option-row"><input type="radio" name="quest-04"
+              value="E"><span><b>E)</b> Somente reflexão da luz ambiente.</span></label></div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Alternativa C.</strong> A luz foi absorvida e parte da energia fica
+            armazenada temporariamente em estados eletrônicos excitados. As transições posteriores podem emitir fótons.
+          </div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf" target="_blank"
+            rel="noopener noreferrer">Consultar a prova de origem (Inep) ↗</a></p>
+      </article>
+      <article class="exam-quiz exam-from-material" data-answer="A">
+        <p class="exam-meta">Exercício do material Aula 05 (não é questão oficial)</p>
+        <h3>Complemento: sódio</h3>
+        <p>Qual é a distribuição dos elétrons do sódio neutro (Z = 11) em camadas?</p>
+        <div class="question-options"><label class="option-row"><input type="radio" name="quest-sodio"
+              value="A"><span><b>A)</b> 2 – 8 – 1</span></label><label class="option-row"><input type="radio"
+              name="quest-sodio" value="B"><span><b>B)</b> 2 – 6</span></label><label class="option-row"><input
+              type="radio" name="quest-sodio" value="C"><span><b>C)</b> 2 – 8 – 8</span></label><label
+            class="option-row"><input type="radio" name="quest-sodio" value="D"><span><b>D)</b> 2 – 7 – 2</span></label>
+        </div><button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Alternativa A.</strong> K comporta 2, L fica com 8 e o elétron restante
+            está em M.</div>
+        </details>
+      </article>
+
+    </section>
+
+    <!-- SLIDE — escolha-metodos -->
+    <section class="slide" id="escolha-metodos">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">🧪</span>
+        <h2>Separação de misturas: qual técnica usar?</h2><span class="badge">Aula 03</span>
+      </div>
+      <p class="hero-lead">Já aprendemos a reconhecer misturas homogêneas e heterogêneas. Agora vamos descobrir
+        <strong>como separar seus componentes</strong>.
+      </p>
+      <div class="content-grid">
+        <div class="text-block">
+          <h3>Por que separar misturas?</h3>
+          <p>Para obter materiais de interesse, retirar impurezas e recuperar substâncias.</p>
+          <div class="example-grid"><span class="example-tag">💧 Tratamento da água</span><span class="example-tag">♻️
+              Reciclagem</span><span class="example-tag">🧂 Produção de sal</span></div>
+        </div>
+        <div class="text-block">
+          <h3>Qual método escolher?</h3>
+          <p>Depende das <strong>propriedades dos componentes</strong>, como tamanho das partículas, densidade,
+            magnetismo, solubilidade e volatilidade.</p>
+          <p>A escolha não é pelo nome da mistura, mas pela diferença de propriedades que permite separar seus
+            componentes.</p>
+        </div>
+      </div>
+      <div class="concept-grid">
+        <div class="concept-card"><strong>Tamanho</strong>
+          <p>Peneiração e filtração.</p>
+        </div>
+        <div class="concept-card"><strong>Densidade</strong>
+          <p>Decantação e centrifugação.</p>
+        </div>
+        <div class="concept-card"><strong>Magnetismo</strong>
+          <p>Imantação.</p>
+        </div>
+        <div class="concept-card"><strong>Volatilidade</strong>
+          <p>Destilação.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE — exercicios-05 -->
+    <section class="slide exam-slide" id="exercicios-05">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>Pratique: afinidade entre líquidos</h2><span class="badge">ENEM / ENCCEJA</span>
+      </div>
+      <p class="exam-intro">Atividade autossuficiente, <strong>adaptada de questão realmente aplicada</strong>. O texto
+        e as alternativas foram reescritos para facilitar o estudo. Marque a resposta e abra o comentário somente
+        depois.</p>
+      <article class="exam-quiz" data-answer="C">
+        <p class="exam-meta">ENCCEJA 2018 · Ensino Médio · nº 22 · questão adaptada</p>
+        <h3>Questão 05</h3>
+        <div class="exam-statement">
+          <p>Para verificar a quantidade de etanol adicionada à gasolina, mistura-se uma porção do combustível com água
+            e aguarda-se a separação. O álcool se mistura preferencialmente com a água. Quais fases se formam nesse
+            teste?</p>
+        </div>
+
+        <div class="question-options"><label class="option-row"><input type="radio" name="quest-05"
+              value="A"><span><b>A)</b> Água e gasolina em uma fase; álcool em outra.</span></label><label
+            class="option-row"><input type="radio" name="quest-05" value="B"><span><b>B)</b> Álcool e gasolina em uma
+              fase; água em outra.</span></label><label class="option-row"><input type="radio" name="quest-05"
+              value="C"><span><b>C)</b> Álcool e água em uma fase; gasolina em outra.</span></label><label
+            class="option-row"><input type="radio" name="quest-05" value="D"><span><b>D)</b> Álcool, água e gasolina em
+              três fases separadas.</span></label></div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Alternativa C.</strong> O etanol tem afinidade com a água e passa para a
+            fase aquosa; os hidrocarbonetos da gasolina formam outra fase.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/educacao_basica/encceja/provas/brasil/2018/medio/medio_ciencias_natureza_ampliada.pdf"
+            target="_blank" rel="noopener noreferrer">Consultar a prova de origem (Inep) ↗</a></p>
+      </article>
+
+    </section>
+
+    <!-- SLIDE — metodos-heterogeneos -->
+    <section class="slide" id="metodos-heterogeneos">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">🧲</span>
+        <h2>Catação, peneiração, filtração e imantação</h2><span class="badge">Heterogêneas</span>
+      </div>
+      <p>Quando conseguimos distinguir componentes sólidos ou partículas suspensas, podemos usar técnicas físicas
+        simples.</p>
+      <div class="method-grid">
+        <article class="concept-card">
+          <h3>🫘 Catação</h3>
+          <p>Separação <strong>manual</strong> dos materiais.</p>
+          <p><strong>Exemplo:</strong> retirar pedras do feijão.</p>
+        </article>
+        <article class="concept-card">
+          <h3>🥣 Peneiração</h3>
+          <p>Uma peneira separa sólidos de <strong>tamanhos diferentes</strong>.</p>
+          <p><strong>Exemplo:</strong> areia e pedrinhas.</p>
+        </article>
+        <article class="concept-card">
+          <h3>🧲 Imantação</h3>
+          <p>Um ímã atrai componentes <strong>ferromagnéticos</strong>.</p>
+          <p><strong>Exemplo:</strong> limalha de ferro misturada à areia.</p>
+        </article>
+        <article class="concept-card">
+          <h3>☕ Filtração</h3>
+          <p>Um material poroso retém partículas suspensas enquanto o fluido passa.</p>
+          <p><strong>Exemplo:</strong> coar café ou separar areia da água.</p>
+        </article>
+      </div>
+      <div class="content-grid">
+        <div class="text-block">
+          <h3>Na filtração, o que fica e o que passa?</h3>
+          <p><strong>Resíduo:</strong> material que fica no filtro. <strong>Filtrado:</strong> parte que atravessa o
+            filtro.</p>
+          <div class="highlight-box"><strong>Cuidado:</strong> um filtro de papel comum <strong>não retira sal
+              dissolvido</strong> na água. Os íons são pequenos demais para ficarem retidos.</div>
+        </div>
+        <div class="diagram-card"><strong>Filtração simples</strong>
+          <div class="filter-graphic" aria-label="Esquema de um filtro retendo material sólido">
+            <div class="filter-funnel"></div>
+            <div class="filter-stem"></div>
+            <div class="filter-cup">
+              <div></div>
+            </div>
+          </div><span class="diagram-caption">Partículas ficam retidas; o líquido passa.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE — exercicios-06 -->
+    <section class="slide exam-slide" id="exercicios-06">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>Pratique: filtração</h2><span class="badge">ENEM / ENCCEJA</span>
+      </div>
+      <p class="exam-intro">Atividade autossuficiente, <strong>adaptada de questão realmente aplicada</strong>. O texto
+        e as alternativas foram reescritos para facilitar o estudo. Marque a resposta e abra o comentário somente
+        depois.</p>
+      <article class="exam-quiz" data-answer="C">
+        <p class="exam-meta">ENCCEJA 2020 · Reaplicação/PPL · Ensino Fundamental · nº 13 · questão adaptada</p>
+        <h3>Questão 06</h3>
+        <div class="exam-statement">
+          <p>Algumas pessoas com insuficiência renal realizam <strong>hemodiálise</strong>, tratamento que remove
+            substâncias indesejadas presentes no sangue por meio de uma membrana especial. Qual processo de separação
+            mais se aproxima dessa função?</p>
+        </div>
+
+        <div class="question-options"><label class="option-row"><input type="radio" name="quest-06"
+              value="A"><span><b>A)</b> Decantação dos resíduos.</span></label><label class="option-row"><input
+              type="radio" name="quest-06" value="B"><span><b>B)</b> Floculação das substâncias.</span></label><label
+            class="option-row"><input type="radio" name="quest-06" value="C"><span><b>C)</b> Filtração seletiva do
+              sangue.</span></label><label class="option-row"><input type="radio" name="quest-06"
+              value="D"><span><b>D)</b> Centrifugação de todos os seus componentes.</span></label></div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Alternativa C.</strong> Na hemodiálise, o sangue passa por um sistema com
+            membrana semipermeável; há transferência seletiva de solutos e água. A alternativa oficial associa essa
+            função à filtração.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/encceja/provas_e_gabaritos/2020_PV_reaplicacao_PPL_EF_ciencias_naturais.pdf"
+            target="_blank" rel="noopener noreferrer">Consultar a prova de origem (Inep) ↗</a></p>
+      </article>
+
+    </section>
+
+    <!-- SLIDE — decantacao -->
+    <section class="slide" id="decantacao">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">💧</span>
+        <h2>Decantação e funil separador</h2><span class="badge">Densidade</span>
+      </div>
+      <p><strong>Decantação</strong> é uma técnica que aproveita a ação da gravidade e diferenças de densidade para
+        separar fases.</p>
+      <div class="content-grid">
+        <div class="text-block">
+          <h3>Água + areia</h3>
+          <p>Após um período de repouso, a areia tende a se depositar no fundo. Podemos transferir cuidadosamente a água
+            para outro recipiente.</p>
+          <h3>Água + óleo</h3>
+          <p>Como são líquidos pouco miscíveis e com densidades diferentes, formam duas fases. Em geral, o óleo fica em
+            cima.</p>
+          <div class="diagram-card">
+            <div class="beaker-layers">
+              <div class="oil-layer">Óleo</div>
+              <div class="water-layer">Água</div>
+            </div><span class="diagram-caption">Esquema de duas fases imiscíveis.</span>
+          </div>
+        </div>
+        <div class="text-block">
+          <h3>Funil de decantação</h3>
+          <p>No laboratório, pode-se usar o funil separador para escoar a fase de baixo primeiro, fechando a torneira
+            antes de passar a fase superior.</p>
+          <div class="diagram-card"><svg viewBox="0 0 310 270" style="width:100%;max-width:290px" role="img"
+              aria-label="Funil de decantação com duas fases e torneira">
+              <path d="M108 20 L201 20 L211 57 Q219 93 194 143 L160 208 L147 208 L116 143 Q90 95 99 58 Z" fill="#d2eff9"
+                stroke="#4e8ba4" stroke-width="4" />
+              <path d="M101 95 Q155 88 207 95 L193 143 L160 207 L147 207 L116 143Z" fill="#a9dcef" />
+              <path d="M101 95 Q155 88 207 95 Q218 65 203 41 L104 41Z" fill="#f2d578" />
+              <path d="M153 207 V241" stroke="#4e8ba4" stroke-width="7" />
+              <path d="M131 225 H175" stroke="#4e8ba4" stroke-width="8" />
+              <rect x="141" y="219" width="23" height="18" rx="3" fill="#385a69" /><text x="160" y="65"
+                text-anchor="middle" font-size="15" fill="#70500b">óleo</text><text x="155" y="143" text-anchor="middle"
+                font-size="15" fill="#285973">água</text>
+            </svg><span class="diagram-caption">O líquido inferior sai pela torneira.</span></div>
+        </div>
+      </div>
+      <div class="highlight-box"><strong>Condição importante:</strong> para separar dois líquidos no funil, eles
+        precisam formar fases distintas. Água e álcool, por exemplo, são miscíveis e não se separam por decantação
+        simples.</div>
+    </section>
+
+    <!-- SLIDE — exercicios-07 -->
+    <section class="slide exam-slide" id="exercicios-07">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>Pratique: líquidos imiscíveis</h2><span class="badge">ENEM / ENCCEJA</span>
+      </div>
+      <p class="exam-intro">Atividade autossuficiente, <strong>adaptada de questão realmente aplicada</strong>. O texto
+        e as alternativas foram reescritos para facilitar o estudo. Marque a resposta e abra o comentário somente
+        depois.</p>
+      <article class="exam-quiz" data-answer="E">
+        <p class="exam-meta">ENEM 2020 · 2º dia, caderno azul · nº 123 · questão adaptada</p>
+        <h3>Questão 07</h3>
+        <div class="exam-statement">
+          <p>Um laboratório precisa recuperar <strong>acetato de etila</strong> misturado com água. O acetato de etila
+            apresenta <strong>baixa solubilidade em água</strong> e densidade de aproximadamente <strong>0,9
+              g/mL</strong>. Qual técnica é mais apropriada para obter as duas fases separadas?</p>
+        </div>
+
+        <div class="question-options"><label class="option-row"><input type="radio" name="quest-07"
+              value="A"><span><b>A)</b> Evaporar somente o acetato sem afetar o outro líquido.</span></label><label
+            class="option-row"><input type="radio" name="quest-07" value="B"><span><b>B)</b> Filtrar com papel de filtro
+              comum.</span></label><label class="option-row"><input type="radio" name="quest-07"
+              value="C"><span><b>C)</b> Usar destilação simples como única opção possível.</span></label><label
+            class="option-row"><input type="radio" name="quest-07" value="D"><span><b>D)</b> Usar centrifugação como se
+              fosse uma suspensão sólida.</span></label><label class="option-row"><input type="radio" name="quest-07"
+              value="E"><span><b>E)</b> Decantar usando um funil de separação.</span></label></div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Alternativa E.</strong> A baixa miscibilidade permite que se formem duas
+            fases. O funil de decantação é a escolha direta para recuperá-las.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D2_CD7.pdf" target="_blank"
+            rel="noopener noreferrer">Consultar a prova de origem (Inep) ↗</a></p>
+      </article>
+
+    </section>
+
+    <!-- SLIDE — evaporacao-destilacao -->
+    <section class="slide" id="evaporacao-destilacao">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">☀️</span>
+        <h2>Evaporação e destilação simples</h2><span class="badge">Misturas homogêneas</span>
+      </div>
+      <p>Algumas misturas são uniformes, pois contêm sólidos dissolvidos. Para separá-las, precisamos explorar a
+        capacidade de um componente passar para o estado de vapor.</p>
+      <div class="content-grid">
+        <div class="text-block">
+          <h3>☀️ Evaporação</h3>
+          <p>O líquido passa para o estado gasoso e o sólido dissolvido permanece.</p>
+          <p><strong>Exemplo:</strong> obtenção de sal em salinas.</p>
+          <div class="highlight-box"><strong>O que recuperamos?</strong> Principalmente o sólido; a água evaporada se
+            dispersa no ar.</div>
+        </div>
+        <div class="text-block">
+          <h3>⚗️ Destilação simples</h3>
+          <p>Aquece-se a solução e, em seguida, <strong>resfria-se o vapor</strong>, recuperando o líquido em outro
+            recipiente.</p>
+          <p><strong>Exemplo:</strong> separar água dos sais dissolvidos.</p>
+          <div class="highlight-box"><strong>O que recuperamos?</strong> A água condensada e o resíduo menos volátil.
+          </div>
+        </div>
+      </div>
+      <div class="diagram-card"><strong>Etapas da destilação simples</strong>
+        <div class="process-flow">
+          <div>🔥<br><strong>Aquecer</strong><small>solução</small></div><span>→</span>
+          <div>💨<br><strong>Vapor</strong><small>do componente volátil</small></div><span>→</span>
+          <div>❄️<br><strong>Condensação</strong><small>resfriamento</small></div><span>→</span>
+          <div>💧<br><strong>Coleta</strong><small>do líquido</small></div>
+        </div>
+      </div>
+      <p class="attention-note">Filtrar, ferver e deixar esfriar no mesmo recipiente ou adicionar cloro <strong>não
+          eliminam os sais dissolvidos</strong>. Para dessalinizar por destilação, é necessário captar e condensar o
+        vapor em outro recipiente.</p>
+    </section>
+
+    <!-- SLIDE — exercicios-08 -->
+    <section class="slide exam-slide" id="exercicios-08">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>Pratique: dessalinização</h2><span class="badge">ENEM / ENCCEJA</span>
+      </div>
+      <p class="exam-intro">Atividade autossuficiente, <strong>adaptada de questão realmente aplicada</strong>. O texto
+        e as alternativas foram reescritos para facilitar o estudo. Marque a resposta e abra o comentário somente
+        depois.</p>
+      <article class="exam-quiz" data-answer="D">
+        <p class="exam-meta">ENCCEJA 2018 · Ensino Fundamental · nº 19 · questão adaptada</p>
+        <h3>Questão 08</h3>
+        <div class="exam-statement">
+          <p>Em determinadas regiões, a água subterrânea é salobra e contém sais dissolvidos. Qual procedimento permite
+            obter água com menor teor desses sais?</p>
+        </div>
+
+        <div class="question-options"><label class="option-row"><input type="radio" name="quest-08"
+              value="A"><span><b>A)</b> Passar a água por um filtro de barro comum.</span></label><label
+            class="option-row"><input type="radio" name="quest-08" value="B"><span><b>B)</b> Ferver e aguardar o
+              resfriamento no mesmo recipiente.</span></label><label class="option-row"><input type="radio"
+              name="quest-08" value="C"><span><b>C)</b> Acrescentar cloro e manter o reservatório
+              fechado.</span></label><label class="option-row"><input type="radio" name="quest-08"
+              value="D"><span><b>D)</b> Aquecer, coletar o vapor e transformá-lo novamente em líquido em outro
+              recipiente.</span></label></div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Alternativa D.</strong> Os sais ficam no recipiente original enquanto o
+            vapor de água é condensado e recolhido separadamente: destilação.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/educacao_basica/encceja/provas/brasil/2018/fundamental/fundamental_ciencias_naturais_superampliada.pdf"
+            target="_blank" rel="noopener noreferrer">Consultar a prova de origem (Inep) ↗</a></p>
+      </article>
+
+
+    </section>
+
+    <!-- SLIDE — encceja-2020-09 -->
+    <section class="slide exam-slide prova-2020" id="encceja-2020-09">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>QUESTÃO 09</h2><span class="badge">ENCCEJA 2020</span>
+      </div>
+      <article class="exam-quiz" data-answer="C">
+        <p class="exam-meta">ENCCEJA 2020 · Ensino Médio · Ciências da Natureza · Questão 09</p>
+        <div class="exam-statement preserved-question">Para o uso sustentável da água, recomenda-se
+          que as plantas e o gramado de um jardim sejam
+          molhados antes das 10 horas da manhã e após
+          as 19 horas. Assim, garante-se a manutenção
+          da umidade desse jardim, respeitando-se o
+          ciclo da água, sem desperdícios.
+          Essa recomendação considera o fenômeno da</div>
+        <div class="question-options">
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-09" value="A"><span>A
+              calefação.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-09" value="B"><span>B
+              sublimação.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-09" value="C"><span>C
+              evaporação.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-09" value="D"><span>D
+              condensação</span></label>
+        </div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Resposta: C.</strong> A evaporação é a passagem da água líquida para o
+            estado gasoso. Regar em horários menos quentes reduz a perda de água por evaporação.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/encceja/provas_e_gabaritos/2020_PV_EM_ciencias_natureza.pdf"
+            target="_blank" rel="noopener noreferrer">Consultar caderno oficial do ENCCEJA 2020 (opcional)</a></p>
+      </article>
+    </section>
+
+    <!-- SLIDE — destilacao-fracionada -->
+    <section class="slide" id="destilacao-fracionada">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">🏭</span>
+        <h2>Destilação fracionada e petróleo</h2><span class="badge">Indústria</span>
+      </div>
+      <p>A <strong>destilação fracionada</strong> é usada na separação de misturas de líquidos ou de vários componentes
+        voláteis com diferentes temperaturas de ebulição.</p>
+      <div class="content-grid">
+        <div class="text-block">
+          <h3>Como funciona a coluna?</h3>
+          <ol>
+            <li>O petróleo é aquecido.</li>
+            <li>Seus componentes vaporizam em diferentes proporções.</li>
+            <li>Na coluna, vapores se resfriam e condensam em regiões distintas.</li>
+            <li>Frações são recolhidas de acordo com a volatilidade.</li>
+          </ol>
+          <div class="highlight-box"><strong>Não significa que cada faixa é uma substância pura:</strong> gasolina,
+            diesel e querosene ainda são misturas de hidrocarbonetos.</div>
+        </div>
+        <div class="text-block">
+          <h3>Frações e faixas aproximadas</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Fração</th>
+                  <th>Faixa (°C)</th>
+                  <th>Produto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Até 20</td>
+                  <td>Gases leves</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>30 a 180</td>
+                  <td>Gasolina</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>170 a 290</td>
+                  <td>Querosene</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>260 a 350</td>
+                  <td>Óleo diesel</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="source-note">Faixas apresentadas no ENEM 2019 para fins didáticos; os valores industriais variam.
+          </p>
+        </div>
+      </div>
+      <div class="diagram-card"><strong>Esquema de uma coluna de destilação</strong><svg viewBox="0 0 600 255"
+          style="max-width:100%;height:auto" role="img"
+          aria-label="Coluna de destilação fracionada com frações leves no topo e pesadas na base">
+          <defs>
+            <linearGradient id="colgrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#c5e6f7" />
+              <stop offset="1" stop-color="#ee9f68" />
+            </linearGradient>
+          </defs>
+          <path d="M220 20 H330 L365 240 H185Z" fill="url(#colgrad)" stroke="#607d8b" stroke-width="3" />
+          <path d="M211 60 H336" stroke="#607d8b" stroke-width="3" />
+          <path d="M215 102 H334" stroke="#607d8b" stroke-width="3" />
+          <path d="M219 144 H332" stroke="#607d8b" stroke-width="3" />
+          <path d="M223 186 H330" stroke="#607d8b" stroke-width="3" />
+          <path d="M330 43 H405" stroke="#607d8b" stroke-width="3" />
+          <path d="M344 95 H405" stroke="#607d8b" stroke-width="3" />
+          <path d="M351 149 H405" stroke="#607d8b" stroke-width="3" />
+          <path d="M357 204 H405" stroke="#607d8b" stroke-width="3" /><text x="420" y="48" font-size="16"
+            fill="currentColor">Gases leves</text><text x="420" y="100" font-size="16"
+            fill="currentColor">Gasolina</text><text x="420" y="154" font-size="16"
+            fill="currentColor">Querosene</text><text x="420" y="209" font-size="16"
+            fill="currentColor">Diesel</text><text x="25" y="236" font-size="16" fill="currentColor">Petróleo
+            aquecido</text>
+          <path d="M140 220 H185" stroke="#b46b38" stroke-width="6" />
+          <path d="M176 213 L190 220 L176 227" fill="none" stroke="#b46b38" stroke-width="4" />
+        </svg><span class="diagram-caption">Representação simplificada: mais voláteis saem nas regiões
+          superiores.</span></div>
+    </section>
+
+    <!-- SLIDE — exercicios-09 -->
+    <section class="slide exam-slide" id="exercicios-09">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>Pratique: frações do petróleo</h2><span class="badge">ENEM / ENCCEJA</span>
+      </div>
+      <p class="exam-intro">Atividade autossuficiente, <strong>adaptada de questão realmente aplicada</strong>. O texto
+        e as alternativas foram reescritos para facilitar o estudo. Marque a resposta e abra o comentário somente
+        depois.</p>
+      <article class="exam-quiz" data-answer="D">
+        <p class="exam-meta">ENEM 2019 · 2º dia, caderno amarelo · nº 108 · questão adaptada</p>
+        <h3>Questão 09</h3>
+        <div class="exam-statement">
+          <p>Na destilação do petróleo, a fração que origina produtos como o diesel (compostos com cadeias carbônicas
+            geralmente maiores) é recolhida em uma faixa de temperaturas superior à das frações leves. Por quê?</p>
+        </div>
+
+        <div class="question-options"><label class="option-row"><input type="radio" name="quest-09"
+              value="A"><span><b>A)</b> Porque necessariamente apresenta maior densidade.</span></label><label
+            class="option-row"><input type="radio" name="quest-09" value="B"><span><b>B)</b> Porque todas as moléculas
+              são mais ramificadas.</span></label><label class="option-row"><input type="radio" name="quest-09"
+              value="C"><span><b>C)</b> Porque dissolve melhor as substâncias presentes no
+              petróleo.</span></label><label class="option-row"><input type="radio" name="quest-09"
+              value="D"><span><b>D)</b> Porque as forças intermoleculares entre essas moléculas tendem a ser mais
+              intensas.</span></label><label class="option-row"><input type="radio" name="quest-09"
+              value="E"><span><b>E)</b> Porque é preciso quebrar as ligações covalentes das cadeias para
+              vaporizá-las.</span></label></div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Alternativa D.</strong> Moléculas maiores de hidrocarbonetos costumam ter
+            forças de dispersão mais intensas, exigindo maior temperatura para ebulição. Destilação não pressupõe
+            quebrar as cadeias.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos/2019"
+            target="_blank" rel="noopener noreferrer">Consultar a prova de origem (Inep) ↗</a></p>
+      </article>
+
+    </section>
+
+    <!-- SLIDE — metodos-complementares -->
+    <section class="slide" id="metodos-complementares">
+<div class="slide-header"><span aria-hidden="true" class="icon-big">🎨</span>
+<h2>Outros métodos: centrifugação, dissolução fracionada e flotação</h2><span class="badge">Aprofundamento ENEM</span>
+</div>
+<p>Outros processos de separação exploram diferenças de sedimentação, solubilidade ou adesão a bolhas.</p>
+<div class="concept-grid">
+
+<div class="concept-card">
+<h3>🌀 Centrifugação</h3>
+<p>A rotação acelera a separação entre fases ou partículas que sedimentam de maneira diferente.</p>
+<p><strong>Exemplo:</strong> separar componentes do sangue em laboratório.</p>
+</div>
+<div class="concept-card">
+<h3>💦 Dissolução fracionada</h3>
+<p>Escolhe-se um solvente que dissolve um componente, mas não o outro.</p>
+<p><strong>Exemplo:</strong> dissolver sal de uma mistura de sal e areia.</p>
+</div>
+<div class="concept-card">
+<h3>🫧 Flotação</h3>
+<p>Aproveita diferenças de densidade ou adesão a bolhas, conforme o processo.</p>
+<p><strong>Exemplo:</strong> concentração de certos minérios.</p>
+</div>
+</div>
+
+</section>
+
+
+<!-- SLIDE — tratamento-da-agua -->
+    <section class="slide" id="tratamento-da-agua">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">🚰</span>
+        <h2>Tratamento da água: as etapas e suas funções</h2><span class="badge">Aplicação cotidiana</span>
+      </div>
+      <p>A Estação de Tratamento de Água (ETA) utiliza <strong>várias etapas em sequência</strong>. Filtrar apenas uma
+        vez não torna necessariamente a água própria para consumo.</p>
+      <div class="water-steps">
+        <div><span>1</span><strong>Coagulação</strong><small>Desestabiliza partículas suspensas.</small></div>
+        <div><span>2</span><strong>Floculação</strong><small>Reúne partículas em flocos.</small></div>
+        <div><span>3</span><strong>Decantação</strong><small>Flocos sedimentam.</small></div>
+        <div><span>4</span><strong>Filtração</strong><small>Retém partículas restantes.</small></div>
+        <div><span>5</span><strong>Desinfecção</strong><small>Reduz microrganismos.</small></div>
+        <div><span>6</span><strong>Ajustes finais</strong><small>pH e fluoretação, quando aplicáveis.</small></div>
+      </div>
+      <div class="content-grid">
+        <div class="text-block">
+          <h3>Por que a decantação vem antes da filtração?</h3>
+          <p>Ela remove grande parte dos flocos formados, diminuindo a quantidade de material que chega ao filtro.</p>
+        </div>
+        <div class="text-block">
+          <h3>Por que adicionar cloro?</h3>
+          <p>Porque <strong>água transparente não significa água sem microrganismos</strong>. A desinfecção diminui o
+            risco de doenças transmitidas pela água.</p>
+        </div>
+      </div>
+      <div class="highlight-box"><strong>Raciocínio para provas:</strong> coagulação/floculação <em>agrupam</em>,
+        decantação <em>sedimenta</em>, filtração <em>retém</em> e desinfecção <em>inativa microrganismos</em>.</div>
+    </section>
+
+    <!-- SLIDE — exercicios-11 -->
+    <section class="slide exam-slide" id="exercicios-11">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>Pratique: tratamento da água</h2><span class="badge">ENEM / ENCCEJA</span>
+      </div>
+      <p class="exam-intro">Atividade autossuficiente, <strong>adaptada de questão realmente aplicada</strong>. O texto
+        e as alternativas foram reescritos para facilitar o estudo. Marque a resposta e abra o comentário somente
+        depois.</p>
+      <article class="exam-quiz" data-answer="B">
+        <p class="exam-meta">ENEM 2022 · 2º dia, caderno azul (digital) · nº 126 · questão adaptada</p>
+        <h3>Questão 11A</h3>
+        <div class="exam-statement">
+          <p>A água captada em um manancial pode apresentar muitos sólidos suspensos. Após a formação de flocos, qual
+            etapa de uma ETA retira <strong>grande parte</strong> desses sólidos antes de a água passar pelos filtros?
+          </p>
+        </div>
+
+        <div class="question-options"><label class="option-row"><input type="radio" name="quest-11A"
+              value="A"><span><b>A)</b> Coagulação.</span></label><label class="option-row"><input type="radio"
+              name="quest-11A" value="B"><span><b>B)</b> Decantação.</span></label><label class="option-row"><input
+              type="radio" name="quest-11A" value="C"><span><b>C)</b> Filtração.</span></label><label
+            class="option-row"><input type="radio" name="quest-11A" value="D"><span><b>D)</b>
+              Desinfecção.</span></label><label class="option-row"><input type="radio" name="quest-11A"
+              value="E"><span><b>E)</b> Fluoretação.</span></label></div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Alternativa B.</strong> Os flocos, mais densos, sedimentam nos tanques de
+            decantação. A filtração retém partículas remanescentes.</div>
+        </details>
+        <p class="exam-source"><a href="https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_digital_D2_CD7.pdf"
+            target="_blank" rel="noopener noreferrer">Consultar a prova de origem (Inep) ↗</a></p>
+      </article>
+
+
+    </section>
+
+    <!-- SLIDE — encceja-2020-30 -->
+    <section class="slide exam-slide prova-2020" id="encceja-2020-30">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>QUESTÃO 30</h2><span class="badge">ENCCEJA 2020</span>
+      </div>
+      <article class="exam-quiz" data-answer="C">
+        <p class="exam-meta">ENCCEJA 2020 · Ensino Médio · Ciências da Natureza · Questão 30</p>
+        <div class="exam-statement preserved-question">Em estações de tratamento de água, são
+          realizados diferentes procedimentos, com
+          o objetivo de tornar a água própria para o
+          consumo humano. Mesmo que se apresente
+          aparentemente límpida e incolor após a
+          filtração, um dos últimos passos para a
+          purificação da água é a adição de produtos à
+          base de cloro.
+          Esses produtos são usados para tratar a água
+          porque</div>
+        <div class="question-options">
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-30" value="A"><span>A formam
+              agregados com as partículas em
+              suspensão que, arrastadas para o fundo,
+              se separam da água.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-30" value="B"><span>B combatem
+              infecções microbianas instaladas
+              no corpo do indivíduo, funcionando como
+              um antibiótico natural.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-30" value="C"><span>C matam
+              microrganismos, diminuindo os
+              riscos de contaminação do consumidor por
+              doenças transmitidas pela água.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-30" value="D"><span>D
+              estimulam a resposta imunológica do
+              consumidor, aumentando suas defesas
+              contra microrganismos patogênicos
+              presentes na água</span></label>
+        </div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Resposta: C.</strong> Produtos à base de cloro são usados na desinfecção da
+            água: matam ou inativam microrganismos que poderiam causar doenças. Isso não é o mesmo que formar flocos,
+            agir como antibiótico no corpo ou estimular a imunidade.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/encceja/provas_e_gabaritos/2020_PV_EM_ciencias_natureza.pdf"
+            target="_blank" rel="noopener noreferrer">Consultar caderno oficial do ENCCEJA 2020 (opcional)</a></p>
+      </article>
+    </section>
+
+    <!-- SLIDE — polimeros -->
+    <section class="slide" id="polimeros">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">🧵</span>
+        <h2>Polímeros: o que precisamos saber?</h2><span class="badge">Introdução breve</span>
+      </div>
+      <div class="content-grid">
+        <div class="text-block">
+          <h3>O que é um polímero?</h3>
+          <p>É um material formado por <strong>moléculas muito grandes</strong>, com unidades que se repetem em uma
+            cadeia.</p>
+          <p>Alguns polímeros são naturais, como a celulose; outros são <strong>sintéticos</strong>, produzidos
+            industrialmente.</p>
+          <div class="highlight-box"><strong>Exemplo:</strong> o <strong>Kevlar</strong> é um polímero sintético da
+            família das aramidas, usado em materiais resistentes, como coletes de proteção.</div>
+        </div>
+        <div class="text-block">
+          <h3>De que elementos o Kevlar é feito?</h3>
+          <p>Ele é um polímero <strong>orgânico</strong>. Sua estrutura química contém <strong>carbono, hidrogênio,
+              nitrogênio e oxigênio</strong>.</p>
+          <div class="concept-grid" style="grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem">
+            <div class="concept-card" style="background:#f7bfd4"><strong>C — Carbono</strong></div>
+            <div class="concept-card" style="background:#aedcf7"><strong>H — Hidrogênio</strong></div>
+            <div class="concept-card" style="background:#ffd1ac"><strong>N — Nitrogênio</strong></div>
+            <div class="concept-card" style="background:#bfe6c0"><strong>O — Oxigênio</strong></div>
+          </div>
+          <p class="source-note">Lembre-se: aço é uma liga metálica, não um elemento químico.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE — encceja-2020-08 -->
+    <section class="slide exam-slide prova-2020" id="encceja-2020-08">
+      <div class="slide-header"><span class="icon-big" aria-hidden="true">📝</span>
+        <h2>QUESTÃO 08</h2><span class="badge">ENCCEJA 2020</span>
+      </div>
+      <article class="exam-quiz" data-answer="D">
+        <p class="exam-meta">ENCCEJA 2020 · Ensino Médio · Ciências da Natureza · Questão 08</p>
+        <div class="exam-statement preserved-question">O kevlar é um polímero sintético resistente
+          ao calor e a impactos utilizado na fabricação
+          de construções aeronáuticas, coletes à prova
+          de balas, velas de navios, cintos de segurança,
+          raquetes de tênis e tanques de combustível de
+          carros de corrida. Na composição química do
+          kevlar há quatro elementos químicos distintos,
+          sendo três deles o nitrogênio, o oxigênio e
+          o hidrogênio.
+          Considerando as características descritas, o
+          quarto elemento químico presente no kevlar é o</div>
+        <div class="question-options">
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-08" value="A"><span>A
+              aço.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-08" value="B"><span>B
+              ferro.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-08" value="C"><span>C
+              titânio.</span></label>
+          <label class="option-row original-option"><input type="radio" name="enceeja2020-08" value="D"><span>D
+              carbono.</span></label>
+        </div>
+        <button type="button" class="check-answer">Conferir resposta</button>
+        <p class="answer-feedback" role="status" aria-live="polite"></p>
+        <details class="solution-box">
+          <summary>Ver gabarito comentado</summary>
+          <div class="solution-text"><strong>Resposta: D.</strong> O Kevlar é um polímero formado por carbono,
+            hidrogênio, nitrogênio e oxigênio. O aço é uma liga metálica, enquanto ferro e titânio não integram a
+            composição básica do Kevlar.</div>
+        </details>
+        <p class="exam-source"><a
+            href="https://download.inep.gov.br/encceja/provas_e_gabaritos/2020_PV_EM_ciencias_natureza.pdf"
+            target="_blank" rel="noopener noreferrer">Consultar caderno oficial do ENCCEJA 2020 (opcional)</a></p>
+      </article>
+    </section>
+
+    <footer class="footer-note" id="resumo">
+      <p><strong>📚 Aulas de Química — Prof. Ágatha Luana</strong></p>
+      <p>Ordem de estudo: elementos → estrutura atômica → Tabela Periódica → modelos atômicos → distribuição eletrônica → separação de misturas → tratamento da água → polímeros.</p>
+      <p><small>As seis questões do ENCCEJA 2020 enviadas foram mantidas sem alteração do texto. Outros exercícios são
+          adaptados do ENEM/ENCCEJA; alguns enunciados originais continham
+          figuras ou tabelas; aqui os dados necessários foram descritos em texto. O link oficial é opcional.</small></p>
+      <p><a href="index.html">← Voltar ao menu</a> · <a href="#inicio">Voltar ao início ↑</a></p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.exam-quiz').forEach(card => {
+      const btn = card.querySelector('.check-answer');
+      const feedback = card.querySelector('.answer-feedback');
+      if (!btn || !feedback) return;
+      btn.addEventListener('click', () => {
+        const selected = card.querySelector('input[type="radio"]:checked');
+        if (!selected) {
+          feedback.textContent = 'Escolha uma alternativa antes de conferir.';
+          feedback.className = 'answer-feedback is-warning';
+          return;
+        }
+        const certo = selected.value === card.dataset.answer;
+        feedback.textContent = certo ? '✓ Resposta correta!' : '✗ Não é essa. Tente novamente ou consulte a explicação.';
+        feedback.className = 'answer-feedback ' + (certo ? 'is-correct' : 'is-wrong');
+      });
+    });
+
+
+
+  </script>
+</body>
+
+</html>
